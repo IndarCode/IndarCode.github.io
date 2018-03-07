@@ -1,0 +1,125 @@
+header {
+    top: 0;
+}
+header + section{
+    margin-top: 90px;
+}
+
+
+
+.aboutContent {
+    display: table-cell;
+    width: 65%;
+    padding-right: 110px;
+}
+.aboutSection{
+    padding-bottom: 80px;
+}
+.aboutImage {
+    display: table-cell;
+    width: 35%;
+    vertical-align: top;
+}
+.aboutImage .imgHolder{
+    display: inline-block;
+    position: relative;
+}
+.aboutImage .imgHolder:before {
+    content: ' ';
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    border: 9px solid var(--red-color);
+    position: absolute;
+    box-sizing: border-box;
+    top: 80px;
+    left: 80px;
+    z-index: -1;
+}
+.aboutContent p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+.skillsSection {
+    background-color: var(--red-color);
+    padding: 130px 100px;
+    overflow: hidden;
+    position: relative;
+}
+.skillsSection ul li {
+    background-color: var(--white-color);
+    padding: 28px 30px;
+    width: 255px;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--red-color);
+    text-align: center;
+    margin: 0 15px;
+}
+.skillsSection ul {
+    margin-bottom: 30px;
+    position: relative;
+}
+.skillsSection ul.mern:before{
+    content: 'MERN';
+    color: #fff;
+    margin-right: 30px;
+    font-size: 40px;
+    text-align: right;
+    width: 180px;
+    display: inline-block;
+} 
+.skillsSection ul.front-end:before{
+    content: 'Front-End';
+    color: #fff;
+    margin-right: 30px;
+    font-size: 40px;
+    text-align: right;
+    width: 180px;
+    display: inline-block;
+}
+.skillsSection:before {
+    content: 'Skills';
+    position: absolute;
+    color: #333232;
+    font-size: 310px;
+    font-family: arial;
+    font-weight: 900;
+    letter-spacing: -13px;
+    opacity: 0.05;
+    left: 0;
+    z-index: 0;
+    bottom: -135px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutSection.secondBlock .aboutImage .imgHolder:before {
+    right: 80px;
+    left: auto
+}
+.aboutSection.secondBlock .aboutContent {
+    padding-right: 0px;
+    padding-left: 110px;
+}
+.aboutSection.secondBlock .aboutImage {
+padding-left: 80px;
+}

@@ -1,0 +1,85 @@
+header {
+    top: 0;
+}
+header + section{
+    margin-top: 90px;
+}
+
+.blogBigHolder {
+    max-width: 1227px;
+    margin:-50px auto 0;
+}
+.blogBigHolder h2 {
+    font-family: var(--abril);
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.blogBigHolder .item{position: relative;}
+.blogBigHolder .bigBlogSubInfo{
+	position: absolute;
+    text-align: left;
+    bottom: 0;
+    padding: 30px 30px 50px;
+    box-shadow: inset 0 -140px 91px -60px rgba(0,0,0,.3);
+    left: 0;
+    right: 0;
+}
+.blogBigHolder .bigBlogSubInfo h4, .blogHolder .bigBlogSubInfo h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.blogBigHolder .bigBlogSubInfo h2, .blogHolder .bigBlogSubInfo h2 {
+    font-size: 40px;
+    color: #fff;
+    font-family: var(--abril);
+    font-weight: 300;
+    line-height: 42px;
+    max-width: 80%;
+}
+.blogBigHolder .owl-theme .owl-controls .owl-buttons div {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    height: 20px;
+    width: 70px;
+    background: transparent;
+    opacity: 0;
+}
+.blogBigHolder .owl-theme .owl-buttons .owl-prev{left: 0px;}
+.blogBigHolder .owl-theme .owl-buttons .owl-prev:before {
+    content: '←';
+    font-size: 46px;
+    font-weight: 200;
+    color: var(--red-color);
+}
+.blogBigHolder .owl-theme .owl-buttons .owl-next{right: 0px;}
+.blogBigHolder .owl-theme .owl-buttons .owl-next:before{
+	content: '→';
+    font-size: 46px;
+    font-weight: 200;
+    color: var(--red-color);
+}
+.blogBigHolder:hover .owl-theme .owl-controls .owl-buttons div{opacity: 1}
+.blogHolder {
+    display: table;
+    width: 96%;
+    background-color: var(--grey-color);
+    margin: 0 auto 100px;
+}
+.blogHolderSection.grey{background-color: var(--white-color);}
+.blogHolder .firstBlockBlog {width: 68%;display: table-cell;vertical-align: top;}
+.blogHolder .secondBlockBlog {width: 32%;display: table-cell;vertical-align: top;padding: 100px 50px;}
+.blogHolder .secondBlockBlog h2, .blogHolder .secondBlockBlog h4 {color: #4a4a4a}
+.blogHolder .secondBlockBlog h2 {
+    max-width: 100%;
+    font-size: 33px;
+    line-height: 36px;
+}
+.blogHolder .secondBlockBlog h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}

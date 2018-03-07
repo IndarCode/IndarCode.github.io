@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Indar - MERN Stack Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+<header>
+	<a href="index.html"><img src="images/logo-white.png" alt="" /> </a>
+	<ul>
+		<li><a href="about.html">About</a></li>
+		<li><a href="work.html">Work</a></li>
+		<li><a href="blog.html">Blogs</a></li>
+		<li><a href="contact.html" class="active">Contact</a></li>
+	</ul>
+</header>
+
+<section class="contactPageSection">
+	<div class="bodyContainer">
+		<div class="contactContent">
+			<h2 class="sectionHeading">Contact Me</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus tincidunt massa, ut iaculis libero scelerisque ac.</p>
+			<ul>
+				<li><a href="mailto:indrjit.ku@gmail.com" class="mailer">indrjit.ku@gmail.com</a></li>
+				<li><a href="tel:9743651292" class="phone">+91-9743651292</a></li>
+			</ul>
+			<div class="socialLinks">
+				<a href=""><img src="images/fb.png" alt="" /></a>
+				<a href=""><img src="images/tw.png" alt="" /></a>
+				<a href=""><img src="images/li.png" alt="" /></a>
+				<a href=""><img src="images/gi.png" alt="" /></a>
+				<a href=""><img src="images/wa.png" alt="" /></a>
+			</div>
+		</div>
+		<div class="contactForm">
+			 <form id="ajax-contact" method="post" action="mailer.php">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" required placeholder="Message"></textarea>
+                <button type="submit" class="blankButton" value="Submit">Send Message</button>
+              </form>
+		</div>
+	</div>
+</section>
+
+
+
+<footer>
+	<p>Copyright © <a href="index.html">Indar</a> 2018. All Rights Reserved.</p>
+</footer>
+
+
+
+<script type="text/javascript" src="script/jquery-2.1.0.min.js"></script>
+
+<script type="text/javascript" src="script/common.js"></script>
+
+<script type="text/javascript">
+	
+const winHeight = $(window).outerHeight();
+	const headerHeight = $('header').outerHeight();
+	const footerHeight = $('footer').outerHeight();
+	const screenHeight = winHeight - (headerHeight + footerHeight);
+	const bodyHeight = $('.bodyContainer').outerHeight();
+
+	if( screenHeight  > bodyHeight) {
+		$('footer').addClass('fixed');
+	}
+	else{
+
+	}
+
+	
+</script>
+
+</body>
+</html>

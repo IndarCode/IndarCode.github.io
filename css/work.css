@@ -1,0 +1,67 @@
+header {
+    top: 0;
+}
+header + section{
+    margin-top: 90px;
+}
+
+.workHolderSection .workContainer {
+    padding: 80px 0;
+    text-align: right;
+}
+.workHolderSection .workContainer ul.workFilter {
+    margin-bottom: 40px;
+    margin-right: 30px;
+}
+.workHolderSection .workContainer .workFilter li {
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: 1px solid #4a4a4a;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.workHolderSection .workContainer .workFilter li:hover{background-color:#4a4a4a;color: #fff;}
+.workHolderSection .workContainer .workFilter li.mixitup-control-active{background-color:var(--red-color);color: #fff; border: 1px solid var(--red-color);}
+.workHolderSection .workContainer .workHolder ul{display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.workHolderSection .workContainer .workHolder ul li {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+.workHolderSection .workContainer .workHolder ul li img{transform: scale(1);transition: all 0.5s ease-in-out 0s;}
+.workHolderSection .workContainer .workHolder ul li:hover img{transform: scale(1.25);transition: all 0.5s ease-in-out 0s;}
+.workHolderSection .workContainer .workHolder .workHeading {
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 25%;
+}
+.workHolderSection .workContainer .workHolder ul li:hover .workHeading {
+	background-color: rgba(0,0,0,0.4);
+	transition: all 0.5s ease-in-out 0s;
+}
+.workHolderSection .workContainer .workHolder .workHeading h2 {
+    font-family: var(--abril);
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+.workHolderSection .workContainer .workHolder li:hover .workHeading h2{color: var(--white-color);}
+
+
+
+

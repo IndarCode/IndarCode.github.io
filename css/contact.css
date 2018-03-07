@@ -1,0 +1,77 @@
+
+header {
+    top: 0;
+}
+header + section{
+	margin-top: 90px;
+}
+.contactPageSection .contactContent {
+    display: table-cell;
+    padding-right: 100px;
+}
+.contactPageSection .contactForm {
+    display: table-cell;
+    width: 55%;
+}
+.contactContent ul{
+	margin: 15px 0 30px;
+}
+.contactContent ul li a {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: #666;
+}
+.mailer:before {
+    content: ' ';
+    background-image: url(../images/mailer.png);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 25px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.phone:before {
+    content: ' ';
+    background-image: url(../images/phone.png);
+    height:25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 25px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.contactForm form input {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 25px 30px;
+    width: 48%;
+    margin-bottom: 3%;
+}
+.contactForm form input:first-child{
+	margin-right: 3%;
+}
+.contactForm form textarea {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 20px 30px;
+    width: 100%;
+    margin-bottom: 2%;
+    height: 210px;
+    resize: none;
+}
+.socialLinks a{
+	display: inline-block;
+	margin-right: 10px;
+}
+.socialLinks a img {
+    filter: grayscale(100%);
+    opacity: 0.65;
+}
+.socialLinks a:hover img{
+	filter: grayscale(0%);
+    opacity: 1;
+}
