@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../css/blog.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
+<link href="../prism.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -36,30 +36,65 @@
 <p>Phasellus nec turpis neque. Nam consequat a lectus sit amet suscipit. Aliquam est neque, suscipit nec nisl eu, ultrices maximus nisi. Morbi sodales quis metus eu iaculis. In vitae aliquam augue. Ut sit amet massa sit amet nisi tincidunt finibus. Vivamus eget justo id nisl gravida placerat lacinia a turpis. Morbi nec purus dui. Sed pharetra lectus eget varius laoreet. Maecenas elementum nunc ante, eu finibus mauris venenatis sed. Quisque vel felis dapibus, interdum lectus vitae, dignissim nulla.</p>
 
 <p>Sed elementum, diam ut tristique imperdiet, tellus nisl luctus lacus, at iaculis odio mauris vel quam. Morbi nisi libero, rhoncus sed pretium non, congue non dui. Nunc sagittis ac augue ut condimentum. Integer ipsum erat, euismod consequat velit tristique, accumsan pretium urna. Nullam facilisis auctor sem sed iaculis. Integer neque dolor, fermentum non nulla eget, fermentum mattis risus. In sollicitudin nulla sit amet volutpat cursus. Praesent sed nisl pulvinar, faucibus ex eget, euismod quam. Donec in mollis tellus, nec tristique orci. Aenean quis aliquet libero. Phasellus vitae dui sollicitudin, dignissim ipsum vel, blandit turpis. Donec convallis sapien enim, ac accumsan metus congue vel. Nunc a felis sed nisi rhoncus blandit vel et turpis. Sed imperdiet neque neque, at egestas ligula rutrum sit amet. Pellentesque lacus libero, dignissim ut nunc ac, fringilla mollis turpis. Praesent consectetur mauris quis dui imperdiet, ac faucibus metus gravida.</p>
+<pre><code class="language-javascript">
+  
+$(window).scroll(function() {
+  if($(window).scrollTop() >= 630){
+    $('header').addClass('showHeader');
+  }
+  else{
+    $('header').removeClass('showHeader');
+  }
+});
+
+
+</code></pre>
 
 <p>Aenean eu arcu sit amet dui tempor vehicula. Curabitur lacinia ac dui sodales faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor sapien lorem, vitae porta nisi auctor ut. Nullam varius libero consectetur purus pharetra, nec lobortis nibh scelerisque. Suspendisse potenti. Fusce posuere consequat ante at porttitor. Maecenas placerat pulvinar posuere. Maecenas facilisis dui eget metus aliquam, nec euismod velit dapibus. Duis egestas nibh in justo egestas dignissim. Sed pellentesque lacinia magna eget scelerisque. Curabitur maximus mauris dapibus maximus tempus. Duis purus nisi, cursus vel ultricies nec, iaculis eget ante. Nam elementum eros et massa interdum sodales. Vivamus sapien enim, interdum ut pellentesque vitae, luctus sit amet erat. Vivamus rhoncus nec orci in imperdiet.</p>
- <div id="disqus_thread"></div>
-<script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://indar-xyz-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<pre><code class="language-css">
+  :root{
+  --red-color : #d00d0f;
+  --grey-color: #fafafa;
+  --font-color : #4a4a4a;
+  --white-color:#fff;
+
+  --sectionHeading: 60px;
+  --abril :'Abril Fatface', cursive;
+}
+::-moz-selection { /* Code for Firefox */
+     color: #fff; 
+    background: #d00d0f;
+}
+::selection {
+    color: #fff; 
+    background: #d00d0f;
+}
+
+
+</code></pre>
+<div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://indar-xyz-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </div>
-     
+
                             
 </section>
 
@@ -100,7 +135,7 @@ s.setAttribute('data-timestamp', +new Date());
 
     });
     </script>
-
+<script src="../prism.js"></script>
 
 </body>
 </html>
