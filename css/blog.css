@@ -17,7 +17,7 @@ header + section{
 }
 .blogBigHolder .item{position: relative;}
 .blogBigHolder .bigBlogSubInfo{
-	position: absolute;
+    position: absolute;
     text-align: left;
     bottom: 0;
     padding: 30px 30px 50px;
@@ -58,7 +58,7 @@ header + section{
 }
 .blogBigHolder .owl-theme .owl-buttons .owl-next{right: 0px;}
 .blogBigHolder .owl-theme .owl-buttons .owl-next:before{
-	content: '→';
+    content: '→';
     font-size: 46px;
     font-weight: 200;
     color: var(--red-color);
@@ -139,4 +139,18 @@ header + section{
     line-height: 30px;
     margin-bottom: 50px;
     line-height: 33px;
+}
+.blogContentHolder p span.highlight {
+    color: var(--red-color);
+    font-weight: 600;
+}
+.blogContentHolder pre[class*="language-"] {
+    margin: 50px 0;
+    padding: 40px 50px;
+}
+.blogContentHolder h3.contentInHeading {
+    font-size: 35px;
+    color: #4a4a4a;
+    font-weight: 600;
+    margin: 40px 0 15px;
 }
