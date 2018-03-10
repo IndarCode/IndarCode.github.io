@@ -3,7 +3,7 @@ header {
     top: 0;
 }
 header + section{
-	margin-top: 90px;
+    margin-top: 90px;
 }
 .contactPageSection .contactContent {
     display: table-cell;
@@ -14,13 +14,17 @@ header + section{
     width: 55%;
 }
 .contactContent ul{
-	margin: 15px 0 30px;
+    margin: 15px 0 30px;
 }
 .contactContent ul li a {
     font-size: 20px;
     margin-bottom: 10px;
     display: block;
     color: #666;
+}
+.contactContent ul li a:hover {
+    color: var(--red-color);
+    font-weight: 600;
 }
 .mailer:before {
     content: ' ';
@@ -52,7 +56,7 @@ header + section{
     margin-bottom: 3%;
 }
 .contactForm form input:first-child{
-	margin-right: 3%;
+    margin-right: 3%;
 }
 .contactForm form textarea {
     background-color: #f1f1f1;
@@ -64,14 +68,14 @@ header + section{
     resize: none;
 }
 .socialLinks a{
-	display: inline-block;
-	margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 .socialLinks a img {
     filter: grayscale(100%);
     opacity: 0.65;
 }
 .socialLinks a:hover img{
-	filter: grayscale(0%);
+    filter: grayscale(0%);
     opacity: 1;
 }
