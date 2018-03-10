@@ -65,23 +65,21 @@ header + section{
     margin-bottom: 30px;
     position: relative;
 }
+.skillsSection ul.mern:before, .skillsSection ul.front-end:before {
+    content: '';
+    color: #fff;
+    margin-right: 30px;
+    font-size: 40px;
+    text-align: right;
+    width: 180px;
+    display: inline-block;
+    font-family: arial;
+} 
 .skillsSection ul.mern:before{
     content: 'MERN';
-    color: #fff;
-    margin-right: 30px;
-    font-size: 40px;
-    text-align: right;
-    width: 180px;
-    display: inline-block;
-} 
+}
 .skillsSection ul.front-end:before{
     content: 'Front-End';
-    color: #fff;
-    margin-right: 30px;
-    font-size: 40px;
-    text-align: right;
-    width: 180px;
-    display: inline-block;
 }
 .skillsSection:before {
     content: 'Skills';
@@ -95,6 +93,7 @@ header + section{
     left: 0;
     z-index: 0;
     bottom: -135px;
+
 }
 
 
