@@ -71,19 +71,35 @@ header + section{
     margin: 0 auto 100px;
 }
 .blogHolderSection.grey{background-color: var(--white-color);}
-.blogHolder .firstBlockBlog {width: 68%;display: table-cell;vertical-align: top;}
-.blogHolder .secondBlockBlog {width: 32%;display: table-cell;vertical-align: top;padding: 100px 50px;}
+.blogHolder .firstBlockBlog {width: 68%;display: table-cell;vertical-align: top;position: relative;}
+.blogHolder .secondBlockBlog {width: 32%;display: table-cell;vertical-align: top;padding: 50px 50px;}
 .blogHolder .secondBlockBlog h2, .blogHolder .secondBlockBlog h4 {color: #4a4a4a}
 .blogHolder .secondBlockBlog h2 {
     max-width: 100%;
-    font-size: 33px;
+    font-size: 30px;
     line-height: 36px;
 }
 .blogHolder .secondBlockBlog h4 {
     font-size: 17px;
     margin-bottom: 20px;
 }
-
+.blogHolder .firstBlockBlog .bigBlogSubInfo {
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    box-shadow: inset 0 -206px 148px -100px rgba(0,0,0,.5);
+}
+.blogHolder .secondBlockBlog .bigBlogSubInfo {
+    margin-top: 40px;
+}
+.blogHolder .secondBlockBlog h2.blockHeading {
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
 
 
 
