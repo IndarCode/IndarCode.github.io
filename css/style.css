@@ -129,6 +129,8 @@ footer.fixed {
 
 
 
+/*Common css*/
+
 .bodyContainer {
     max-width: 80%;
     margin: 0 auto;
@@ -165,4 +167,110 @@ h5.sectionSubHeading {
     font-size: 20px;
     margin-top: -20px;
     font-weight: 400;
+}
+
+
+
+
+
+
+@media (max-width: 767px){
+
+header + section {
+    margin-top: 74px !important;
+}
+header {
+        padding: 12px 20px;
+}
+header a img.logoDesk {
+    display: none;
+}
+header > ul {
+    float: none;
+    text-align: left;
+    width: calc(100%);
+    margin-top: 0px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 74px;
+    background-color: var(--red-color);
+    box-shadow: inset 0px 31px 10px -32px rgba(0,0,0,.3);
+    z-index: -1;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+header > ul.show-menu {
+    max-height: 200px;
+}
+header > ul li {
+    display: block;
+}
+    header > ul li a {
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+/*Hamburger menu icon css*/
+    .hamburger-box {width: 35px;height:30px;display: block;position: relative;float: right;margin: -5px 0px 0 0;}
+    .hamburger-inner { display: block; top: 50%; margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 35px; height: 2px; background-color: #fff; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after { content: ""; display: block; }
+    .hamburger-inner::before { top: -8px; }
+    .hamburger-inner::after { bottom: -8px; }
+    .hamburger--squeeze .hamburger-inner { transition-duration: 0.1s; transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); margin-top: 15px; }
+    .hamburger--squeeze .hamburger-inner::before { transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
+    .hamburger--squeeze .hamburger-inner::after { transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--squeeze.is-active .hamburger-inner { transform: rotate(45deg); transition-delay: 0.14s; transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger--squeeze.is-active .hamburger-inner::before { top: 0; opacity: 0; transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
+    .hamburger--squeeze.is-active .hamburger-inner::after { bottom: 0; transform: rotate(-90deg); transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+}
+footer {
+    padding: 15px;
+}
+footer p {
+    font-size: 12px;
+}
+footer p a {
+    font-size: 15px;
+}
+
+
+/*Common css*/
+.bodyContainer {
+    max-width: 100%;
+    padding: 40px 20px;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+     header a img.logoMob {
+    display: none;
+}
+}
+
+
+/*Responsive css for tab*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    header {
+        padding: 12px 30px;
+    }
+    header > a {
+        width: 125px;
+    }
+    header > ul li a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
 }

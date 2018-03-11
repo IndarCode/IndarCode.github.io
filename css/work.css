@@ -65,3 +65,20 @@ header + section{
 
 
 
+
+
+@media (max-width: 767px){
+
+.workHolderSection .workContainer {
+    padding: 40px 20px;
+    text-align: center;
+}
+.workHolderSection .workContainer ul.workFilter {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+.workHolderSection .workContainer .workHolder ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
