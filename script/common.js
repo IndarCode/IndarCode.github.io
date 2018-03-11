@@ -63,8 +63,11 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-
-
+$("header").append("<span class='hamburger-box hamburger hamburger--squeeze'> <span class='hamburger-inner'></span></span>");
+$('.hamburger-box').on('click', function(){
+  $(this).toggleClass('is-active');
+  $('header ul').toggleClass('show-menu');
+});
 
 
 })();
