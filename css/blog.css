@@ -170,3 +170,29 @@ header + section{
     font-weight: 600;
     margin: 40px 0 15px;
 }
+
+#disqus_thread{position: relative;}
+div#disqus_thread:before {
+    content: ' ';
+    display: block;
+    height: 60px;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+}
+.code-editor iframe {
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+.code-editor:after {
+    content: ' ';
+    height: 22px;
+    display: block;
+    background-color: var(--grey-color);
+    position: relative;
+    bottom: 22px;
+    border-top: 1px solid #ccc;
+}
