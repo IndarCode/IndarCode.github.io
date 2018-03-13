@@ -210,9 +210,9 @@ h2.sectionHeading {
     line-height: 32px;
 }
 h5.sectionSubHeading {
-    font-size: 20px;
-    margin-top: -20px;
-    font-weight: 400;
+    font-size: 16px;
+    margin-top: -10px;
+    font-weight: 300;
 }
 
 
@@ -243,6 +243,7 @@ header > ul {
 }
 header > ul.show-menu {
     max-height: 200px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
 }
 header > ul li {
     display: block;
@@ -250,6 +251,9 @@ header > ul li {
     header > ul li a {
     padding: 10px 20px;
     font-size: 13px;
+}
+header > ul li a:hover:before {
+   display: none;
 }
 
 /*Hamburger menu icon css*/
@@ -298,6 +302,9 @@ footer p a {
 header a img.logoMob {
     display: none;
     }
+    header > ul li a:hover:before {
+   display: none;
+}
 }
 
 
@@ -353,21 +360,11 @@ h2.sectionHeading {
 }
 h5.sectionSubHeading {
     font-size: 20px;
-    margin-top: -10px;
+    margin: -10px auto 0;
     font-weight: 400;
+    max-width: 70%;
+    line-height: 25px;
 }
-.homePageBannerSection + .aboutSection {
-    padding-bottom: 0;
-}
-.aboutSection .aboutContent {
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    text-align: center;
-}
-.aboutSection .aboutImage {
-    display: none;
-}
-.aboutSection .aboutContent .blankButton{margin-bottom: 40px;}
+
 
 }

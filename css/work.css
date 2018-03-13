@@ -81,6 +81,15 @@ header + section{
     width: 100%;
     margin-bottom: 20px;
 }
+.workHolderSection .workContainer .workFilter li {
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin: 4px;
+}
+.workHolderSection .workContainer .workHolder .workHeading h2 {
+    font-size: 28px;
+}
 }
 
 

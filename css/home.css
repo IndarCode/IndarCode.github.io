@@ -388,7 +388,156 @@ header + section {
     width: 48.5%;
     margin: 0 0 3%;
 }
+.aboutContent p {
+    font-size: 21px;
+    line-height: 28px;
+}
+.homePageBannerSection + .aboutSection {
+    padding-bottom: 0;
+}
+.aboutSection .aboutContent {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+}
+.aboutSection .aboutImage {
+    display: none;
+}
+.aboutSection .aboutContent .blankButton {
+    margin: 30px 0 0 !important;
+}
+.homeBannerImageHolder:before{
+    content: ' ';
+    display: block;
+}
+}
 
 
-section.homePageBannerSection {}
+
+@media (max-width: 767px) {
+section.homePageBannerSection {
+    margin-top: 0px !important;
+}
+.homeBannerContainer {
+    text-align: left;
+    height: 100%;
+}
+.homePageBannerSection a.homeBannerLogo {
+    left: 20px;
+    top: 20px;
+    max-width: 110px;
+}
+.homeBannerContentHolder {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-right: 0;
+    position: absolute;
+    z-index: 9;
+    bottom: 140px;
+    padding-left: 20px;
+}
+.homePageBannerSection h1 {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: left;
+    transform: none !important;
+}
+.homePageBannerSection h1 span {
+    font-size: 33px;
+    letter-spacing: -1px;
+}
+.homeBannerContentHolder ul {
+    display: none;
+}
+.homeBannerImageHolder {
+    display: block;
+    width: 100%;
+    height: 100%; 
+}
+.homeBannerImageHolder img {
+    width: 800px;
+    max-width: inherit;
+    margin-top: 10px;
+    position: relative;
+    right: 70px;
+    bottom: 0px;
+}
+.homePageBannerSection h1 i {
+    display: none;
+}
+.aboutImage {
+    display: none;
+}
+.aboutContent {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+}
+.aboutContent p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.aboutContent .blankButton{margin-top: 25px;}
+.aboutSection {
+    padding-bottom: 0;
+}
+.workList {
+    max-width: 100%;
+    margin: 30px 0 0;
+}
+.workList li {
+    display: block;
+    width: 100%;
+    margin: 0 0 15px;
+}
+.workList li:last-child{margin-bottom: 0px;}
+.blogContainer {
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 40px 20px;
+}
+.blogContainer .blogHolder {
+    display: block;
+    width: auto;
+    margin-top: 40px;
+}
+.blogContainer .blogHolder ul, .blogContainer .blogHolder ul:last-child {
+    float: none;
+    width: 100%;
+}
+.blogContainer .blogHolder ul li{margin-bottom: 20px;}
+.blogHolder li a .blog-content {
+    padding: 20px;
+}
+.blogHolder li a .blog-content h2 {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 95%;
+}
+.blogHolder li a .blog-content h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
