@@ -2,7 +2,7 @@
 
 
 section.homePageBannerSection {
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     background-color: var(--white-color);
     overflow: hidden;
 }
@@ -13,13 +13,14 @@ section.homePageBannerSection {
 
 .homeBannerContainer {
     text-align: right;
+    height: 100%;
 }
 .homeBannerContentHolder {
     display: inline-block;
     vertical-align: middle;
     text-align: right;
     width: 42%;
-    margin-right: -185px;
+    margin-right: -240px;
 }
 .homeBannerContentHolder ul {
     position: absolute;
@@ -27,11 +28,11 @@ section.homePageBannerSection {
 .homeBannerImageHolder {
     display: inline-block;
     vertical-align: middle;
-    width: 55%;
+    width: 62%;
     position: relative;
     z-index: 1;
 }
-.homeBannerImageHolder img{margin-top: -15px;}
+.homeBannerImageHolder img{width: 100%;}
 
 
 .homePageBannerSection h1 {
@@ -299,3 +300,95 @@ section.homePageBannerSection {
     margin-bottom: 10px;
 }
 
+
+
+
+
+
+@media (max-width: 1024px) and (min-width: 768px){
+header + section {
+    margin-top: 0px !important;
+}
+.homeBannerContainer {
+    position: relative;
+}
+.homeBannerContentHolder {
+    display: block;
+    vertical-align: middle;
+    text-align: left;
+    width: auto;
+    margin-right: 0;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    margin-top: 0px;
+}
+.homeBannerImageHolder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+.homeBannerImageHolder img {
+    width: 1270px;
+    max-width: inherit;
+    margin-right: 44px;
+}
+.homePageBannerSection a.homeBannerLogo {
+    left: 40px;
+    top: 40px;
+    max-width: 150px;
+}
+.homeBannerContentHolder ul {
+    display: none;
+}
+.homePageBannerSection h1 {
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
+    transform: none !important;
+}
+.homePageBannerSection h1 span {
+    font-size: 60px;
+}
+.homePageBannerSection h1 i {
+    display: none;
+}
+.blogContainer {
+    max-width: 100%;
+    margin: 0;
+    padding: 50px 40px;
+}
+.blogContainer .blogHolder {
+    display: block;
+    margin-top: 50px;
+    width: auto;
+}
+.blogContainer .blogHolder ul {
+    float: none;
+    width: auto;
+}
+.blogContainer .blogHolder ul:last-child {
+    float: none;
+    width: 100%;
+    clear: both;
+    display: table;
+}
+.blogContainer .blogHolder ul:last-child li{width: 50%;
+    float: left;}
+
+.workList {
+    max-width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.workList li {
+    width: 48.5%;
+    margin: 0 0 3%;
+}
+
+
+section.homePageBannerSection {}
+}

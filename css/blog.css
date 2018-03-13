@@ -203,6 +203,72 @@ div#disqus_thread:before {
 
 
 
+/*Responsive css for mobile*/
+
+@media (max-width: 767px){
+
+.blogBigHolder {
+    margin: 0px auto 0;
+}
+.blogBigHolder h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.blogBigHolder .bigBlogSubInfo {
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.35);
+    padding-top: 38px;
+}
+.blogBigHolder .bigBlogSubInfo h4, .blogHolder .bigBlogSubInfo h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.blogBigHolder .bigBlogSubInfo h2, .blogHolder .bigBlogSubInfo h2 {
+    font-size: 22px;
+    font-family: var(--abril);
+    font-weight: 300;
+    line-height: 24px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.blogHolder {
+    display: block;
+    width: 100%;
+    margin: 0 auto 0px;
+}
+.blogHolder .firstBlockBlog, .blogHolder .secondBlockBlog {
+    width: 100%;
+    display: block;
+}
+.blogHolder .firstBlockBlog, .blogHolder .secondBlockBlog {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    border-bottom: 30px solid #fff;
+}
+.blogHolder .secondBlockBlog h2.blockHeading {
+    display: none;
+}
+.blogHolder .secondBlockBlog .bigBlogSubInfo {
+    margin-top: 0;
+    padding: 20px;
+}
+.blogHolder .firstBlockBlog .bigBlogSubInfo {
+    position: static;
+    padding: 20px;
+    box-shadow: none;
+}
+.blogHolder .bigBlogSubInfo h4, .blogHolder .bigBlogSubInfo h2 {
+    color: #4a4a4a;
+}
+}
 
 
 
@@ -210,11 +276,68 @@ div#disqus_thread:before {
 
 
 
+/*Responsive css for tab*/
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .blogBigHolder {
+    margin: 0px auto 0;
+}
+.blogBigHolder h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.blogBigHolder .bigBlogSubInfo {
+    padding: 30px;
+    box-shadow: inset 0 -140px 91px -60px rgba(0,0,0,.3);
+}
+.blogBigHolder .bigBlogSubInfo h4, .blogHolder .bigBlogSubInfo h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.blogBigHolder .bigBlogSubInfo h2{
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 95%;
+    margin-bottom: 0px;
+}
+.blogHolder {
+    width: 100%;
+    margin: 40px 0 0;
+}
+.blogHolder .firstBlockBlog .bigBlogSubInfo {
+    padding: 30px;
+    box-shadow: inset 0 -227px 61px -102px rgba(0,0,0,.5);
+}
+.blogBigHolder .bigBlogSubInfo h2, .blogHolder .bigBlogSubInfo h2 {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 90%;
+}
+.blogHolder .secondBlockBlog, .blogHolder .firstBlockBlog {
+    width: 100%;
+    display: block;
+    padding: 0;
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+.blogHolder .secondBlockBlog h2.blockHeading {
+    display: none;
+}
+.blogHolder .secondBlockBlog .bigBlogSubInfo {
+    padding: 30px;
+    box-shadow: inset 0 -216px 130px -134px rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+}
+.blogHolder .secondBlockBlog .bigBlogSubInfo h4, .blogHolder .secondBlockBlog .bigBlogSubInfo h2{
+    color: #fff;
+}
 
-
-
-
+.blogHolder .firstBlockBlog {
+    margin-bottom: 40px;
+}
 
 
 

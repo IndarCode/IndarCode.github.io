@@ -82,3 +82,30 @@ header + section{
     margin-bottom: 20px;
 }
 }
+
+
+
+
+/*Responsive css for tab*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+.workHolderSection .workContainer .workFilter li {
+    padding: 7px 15px;
+    font-size: 12px;
+}
+.workHolderSection .workContainer {
+    padding: 40px 0;
+}
+.workHolderSection .workContainer ul.workFilter {
+    margin-right: 35px;
+}
+.workHolderSection .workContainer .workHolder ul {
+    padding: 0 40px;
+    justify-content: space-between;
+}
+.workHolderSection .workContainer .workHolder ul li {
+    width: 48.5%;
+    margin-bottom: 3%;
+}
+}

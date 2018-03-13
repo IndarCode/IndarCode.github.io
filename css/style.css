@@ -174,7 +174,47 @@ h5.sectionSubHeading {
 
 
 
+/*Responsive css for mobile*/
+
 @media (max-width: 767px){
+
+/*Common css*/
+:root{
+  --sectionHeading: 35px;
+}
+.bodyContainer {
+    max-width: 100%;
+    padding: 40px 20px;
+    display: block;
+    width: 100%;
+}
+.bodyContainer p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.blankButton {
+    border: 1px solid var(--red-color);
+    padding: 11px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--red-color);
+    margin-top: 10px;
+    background: transparent;
+}
+h2.sectionHeading {
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+h5.sectionSubHeading {
+    font-size: 20px;
+    margin-top: -20px;
+    font-weight: 400;
+}
+
 
 header + section {
     margin-top: 74px !important;
@@ -226,7 +266,6 @@ header > ul li {
     .hamburger--squeeze.is-active .hamburger-inner::before { top: 0; opacity: 0; transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
     .hamburger--squeeze.is-active .hamburger-inner::after { bottom: 0; transform: rotate(-90deg); transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-}
 footer {
     padding: 15px;
 }
@@ -238,14 +277,16 @@ footer p a {
 }
 
 
-/*Common css*/
-.bodyContainer {
-    max-width: 100%;
-    padding: 40px 20px;
-    display: block;
-    width: 100%;
-}
 
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -254,9 +295,9 @@ footer p a {
 
 
 @media (min-width: 768px){
-     header a img.logoMob {
+header a img.logoMob {
     display: none;
-}
+    }
 }
 
 
@@ -273,4 +314,60 @@ footer p a {
         padding: 8px 20px;
         font-size: 15px;
     }
+    header + section {
+    margin-top: 80px !important; 
+}
+
+
+/*Common css*/
+:root{
+  --sectionHeading: 45px;
+}
+.bodyContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 40px;
+    clear: both;
+    display: block;
+    width: 100%;
+}
+.bodyContainer p {
+    font-size: 21px;
+    line-height: 28px;
+}
+.blankButton {
+    border: 1px solid var(--red-color);
+    padding: 13px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--red-color);
+    margin-top: 10px;
+    background: transparent;
+}
+h2.sectionHeading {
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+h5.sectionSubHeading {
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: 400;
+}
+.homePageBannerSection + .aboutSection {
+    padding-bottom: 0;
+}
+.aboutSection .aboutContent {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+}
+.aboutSection .aboutImage {
+    display: none;
+}
+.aboutSection .aboutContent .blankButton{margin-bottom: 40px;}
+
 }
