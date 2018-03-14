@@ -180,7 +180,7 @@ h5.sectionSubHeading {
 
 /*Common css*/
 :root{
-  --sectionHeading: 35px;
+  --sectionHeading: 30px;
 }
 .bodyContainer {
     max-width: 100%;
