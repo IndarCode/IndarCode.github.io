@@ -198,11 +198,23 @@ section.homePageBannerSection {
     opacity: 0;
     transition: all 0.2s ease-in-out 0s;
 }
+.workList li a .work-overlay2 {
+    position: absolute;
+    background-color: rgba(0,0,0, 0.35);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 110px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out 0s;
+}
 .workList li a:hover .work-overlay{
 	opacity:1;
 	transition: all 0.2s ease-in-out 0s;
 }
-.workList li .work-overlay h3 {
+.workList li a:hover .work-overlay2 {opacity: 0; transition: all 0.2s ease-in-out 0s;}
+.workList li .work-overlay h3, .workList li a .work-overlay2 h3 {
     font-size: 35px;
     color: #fff;
     font-family: var(--abril);
@@ -375,14 +387,29 @@ header + section {
     display: table;
 }
 .blogContainer .blogHolder ul:last-child li{width: 50%;
-    float: left;}
-
+    float: left;
+}
+.blogHolder li a .blog-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.blogHolder li a .blog-content h2 {
+    font-size: 30px;
+    line-height: 35px;
+    max-width: 100%;
+}
 .workList {
     max-width: 100%;
     margin: 40px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.workList li a .work-overlay2 {
+    padding: 50px 0px;
+}
+.workList li .work-overlay h3, .workList li a .work-overlay2 h3 {
+    font-size: 25px;
 }
 .workList li {
     width: 48.5%;
@@ -494,6 +521,12 @@ section.homePageBannerSection {
     width: 100%;
     margin: 0 0 15px;
 }
+.workList li a .work-overlay2 {
+    padding: 50px 0px;
+}
+.workList li .work-overlay h3, .workList li a .work-overlay2 h3 {
+    font-size: 25px;
+}
 .workList li:last-child{margin-bottom: 0px;}
 .blogContainer {
     max-width: 100%;
@@ -524,20 +557,61 @@ section.homePageBannerSection {
 }
 
 
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1600px) and (min-width: 1200px){
+.homeBannerContentHolder {
+    width: 50%;
+    margin-right: -30px;
+}
+.homeBannerImageHolder {
+    width: 49%;
+}
+.homePageBannerSection a.homeBannerLogo {
+    max-width: 135px;
+}
+.homeBannerImageHolder img {
+    width: 940px;
+    right: 170px;
+    position: relative;
+    max-width: inherit;
+}
+.homePageBannerSection h1 {
+    font-size: 64px;
+    line-height: 75px;
+}
+.homePageBannerSection h1 span {
+    font-size: 58px;
+}
+.homePageBannerSection h1 i {
+    height: 270px;
+    width: 710px;
+    border: 7px solid var( --red-color);
+    right: -610px;
+    margin-top: -140px;
+}
+.aboutContent p {
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+.blogContainer {
+    padding: 100px 60px;
+}
+.blogContainer .blogHolder {
+    width: 1051px;
+    margin: 60px auto 0;
+}
+.blogContainer .blogHolder ul {
+    width: 700px;
+}
+.blogContainer .blogHolder ul:last-child {
+    width: 351px;
+}
+header + section {
+    margin-top: 0px !important;
+}
 }

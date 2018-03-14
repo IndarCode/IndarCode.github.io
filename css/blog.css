@@ -88,6 +88,8 @@ header + section{
     bottom: 0;
     padding: 50px;
     box-shadow: inset 0 -206px 148px -100px rgba(0,0,0,.5);
+        left: 0;
+    right: 0;
 }
 .blogHolder .secondBlockBlog .bigBlogSubInfo {
     margin-top: 40px;
@@ -100,7 +102,9 @@ header + section{
     margin-top: -20px;
     margin-bottom: 10px;
 }
-
+.blogContentHolder {
+    background-color: #fff;
+}
 
 
 
@@ -338,7 +342,7 @@ div#disqus_thread:before {
 .blogHolder .firstBlockBlog {
     margin-bottom: 40px;
 }
-
+}
 
 
 
@@ -387,4 +391,67 @@ div#disqus_thread:before {
     line-height: 30px;
 }
 .blogHeaderHolder:before{display: none;}
+
+}
+
+
+
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px){
+
+   .blogBigHolder {
+    max-width: 1150px;
+    margin: -30px auto 0px;
+}
+.blogBigHolder h2 {
+    margin-bottom: 25px;
+    line-height: 33px;
+}
+.blogHolder .secondBlockBlog {
+    padding: 30px 40px;
+}
+.blogBigHolder .bigBlogSubInfo h2, .blogHolder .bigBlogSubInfo h2 {
+    font-size: 35px;
+    max-width: 100%;
+}
+.blogHolder .secondBlockBlog h2 {
+    font-size: 27px;
+    line-height: 32px;
+}
+.blogBigHolder .bigBlogSubInfo h4, .blogHolder .bigBlogSubInfo h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.blogHolder .secondBlockBlog h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.blogHolder .secondBlockBlog h2.blockHeading {
+    margin-top: -5px;
+}
+.blogHolder .secondBlockBlog .bigBlogSubInfo {
+    margin-top: 30px;
+}
+.blogHeaderHolder h1 {
+    font-size: 65px;
+    line-height: 50px;
+}
+.blogHeaderHolder h1 span {
+    font-size: 35px;
+    line-height: 65px;
+}
+.blogContentHolder p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.blogContentHolder h3.contentInHeading {
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+.blogHeaderHolder {
+    height: 260px;
+}
 }

@@ -223,3 +223,43 @@ padding-left: 80px;
 }
 .skillsSection:before{display: none;}
 }
+
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px){
+.aboutContent p {
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+.aboutImage img {
+    width: 350px;
+}
+.aboutImage .imgHolder:before {
+    border: 8px solid var(--red-color);
+    top: 70px;
+    left: 70px;
+}
+.skillsSection {
+    padding: 90px 5%;
+}
+.skillsSection ul.mern:before, .skillsSection ul.front-end:before {
+    margin-right: 10px;
+    font-size: 35px;
+    width: 156px;
+}
+.skillsSection ul li {
+    padding: 17px 25px;
+    width: 190px;
+    font-size: 27px;
+    margin: 0 10px;
+}
+.skillsSection:before {
+    font-size: 260px;
+    letter-spacing: -15px;
+    left: 10px;
+    bottom: -129px;
+}
+
+}

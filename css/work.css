@@ -118,3 +118,12 @@ header + section{
     margin-bottom: 3%;
 }
 }
+
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px){
+.workHolderSection .workContainer .workHolder .workHeading h2 {
+    font-size: 30px;
+}
+}
