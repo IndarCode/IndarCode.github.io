@@ -614,4 +614,47 @@ section.homePageBannerSection {
 header + section {
     margin-top: 0px !important;
 }
+.homeBannerContentHolder ul li {
+    font-size: 32px;
+}
+.homeBannerContentHolder ul li:first-child {
+    top: -130px;
+    left: 10px;
+}
+.homeBannerContentHolder ul li:nth-child(2) {
+    top: -180px;
+    left: 170px;
+}
+.homeBannerContentHolder ul li:nth-child(3) {
+    top: -260px;
+    left: 220px;
+}
+.homeBannerContentHolder ul li:nth-child(4) {
+    top: -220px;
+    left: 350px;
+}
+.homeBannerContentHolder ul li:nth-child(5) {
+    top: -300px;
+    left: 490px;
+}
+.homeBannerContentHolder ul li:nth-child(6) {
+    top: -190px;
+    left: 550px;
+}
+.homeBannerContentHolder ul li:nth-child(7) {
+    bottom: -80px;
+    left: 80px;
+}
+.homeBannerContentHolder ul li:nth-child(8) {
+    bottom: -150px;
+    left: 170px;
+}
+.homeBannerContentHolder ul li:nth-child(9) {
+    bottom: -80px;
+    left: 350px;
+}
+.homeBannerContentHolder ul li:nth-child(10) {
+    bottom: -120px;
+    left: 470px;
+}
 }
