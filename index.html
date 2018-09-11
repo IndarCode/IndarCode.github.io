@@ -1,188 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Indar - MERN Stack Developer</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800,900" rel="stylesheet">
+	<title>Indar : A Front-End Developer</title>
+		<style>
+	*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: #231f20;
+	text-decoration: none;
+	list-style: none;
+}
+html, body{
+	height: 100%;
+}
+a:focus, input:focus{
+	outline: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+
+section.home {
+    min-height: 100vh;
+    background-image: url(paper.jpg);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
 </head>
 <body>
-<header>
-	<a href="index.html"><img src="images/logo-white.png" class="logoDesk" alt="" /><img src="images/logo-white-mob.png" class="logoMob" alt="" /> </a>
-	<ul>
-		<li><a href="about.html">About</a></li>
-		<li><a href="work.html">Demos</a></li>
-		<li><a href="blog.html">Blogs</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</header>
 
-<section class="homePageBannerSection">
-	<div class="homeBannerContainer">
-		<a href="" class="homeBannerLogo"><img src="images/logo-red.png" alt="" /> </a>
-		<div class="homeBannerContentHolder">
-			<h1><span>Hi, I’m Indar</span>Front End Developer<i></i></h1>
-			<ul>
-				<li>JavaScript</li>
-				<li>React</li>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				
-				<li>NPM</li>
-				<li>MongoDB</li>
-				<li>Jquery</li>
-				<li>NodeJS</li>
-				<li>Redux</li>
-				<li>PhotoShop</li>
-			</ul>
-		</div>
-		<div class="homeBannerImageHolder">
-			<img src="images/indar.png" alt="" />
-		</div>
-	</div>
+
+
+<section class="home">
+	<img src="Untitled-1.jpg" alt="" />
 </section>
-
-<section class="aboutSection">
-	<div class="bodyContainer">
-		<div class="aboutContent">
-			<h2 class="sectionHeading">Who am I?</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-			<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-			<a href="" class="blankButton">Know More</a>
-		
-		</div>
-		<div class="aboutImage">
-			<div class="imgHolder">
-				<img src="images/about-small.jpg" alt="" />
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-<section class="workSection">
-	<div class="bodyContainer">
-		<h2 class="sectionHeading">Work/Demos</h2>
-		<h5 class="sectionSubHeading">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
-
-		<ul class="workList">
-			<li>
-				<a href="">
-					<img src="images/w-1.jpg" alt="" />
-					<div class="work-overlay">
-						<h3>Eloquent JavaScript</h3>
-						<p>They also sell an ebook version more polished than the files linked below.</p>
-						<i></i>
-					</div>
-					<div class="work-overlay2">
-						<h3>Eloquent JavaScript</h3>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/w-2.jpg" alt="" />
-					<div class="work-overlay">
-						<h3>Eloquent JavaScript</h3>
-						<p>They also sell an ebook version more polished than the files linked below.</p>
-						<i></i>
-					</div>
-					<div class="work-overlay2">
-						<h3>Eloquent JavaScript</h3>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/w-3.jpg" alt="" />
-					<div class="work-overlay">
-						<h3>Eloquent JavaScript</h3>
-						<p>They also sell an ebook version more polished than the files linked below.</p>
-						<i></i>
-					</div>
-					<div class="work-overlay2">
-						<h3>Eloquent JavaScript</h3>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/w-4.jpg" alt="" />
-					<div class="work-overlay">
-						<h3>Eloquent JavaScript</h3>
-						<p>They also sell an ebook version more polished than the files linked below.</p>
-						<i></i>
-					</div>
-					<div class="work-overlay2">
-						<h3>Eloquent JavaScript</h3>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	
-</section>
-
-<section class="blogSection">
-
-		<div class="blogContainer">
-			<h2 class="sectionHeading">Blog/Article</h2>
-			<h5 class="sectionSubHeading">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
-			<div class="blogHolder">
-			<ul>
-				<li>
-					<a href="">
-						<img src="images/b-1.jpg" alt="" />
-						<div class="blog-content">
-							<h4>REACT / 02-12-2018</h4>
-							<h2>Real Bass Vol. 01: Welcome to tha Jungle Cassette</h2>
-						</div>
-					</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="">
-						<img src="images/b-2.jpg" alt="" />
-						<div class="blog-content">
-							<h4>REACT / 02-12-2018</h4>
-							<h2>Real Bass Vol. 01: Welcome to tha Jungle Cassette</h2>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/b-3.jpg" alt="" />
-						<div class="blog-content">
-							<h4>REACT / 02-12-2018</h4>
-							<h2>Real Bass Vol. 01: Welcome to tha Jungle Cassette</h2>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-		</div>
-
-	
-</section>
-
-<footer>
-	<!-- <img src="images/logo-red.png" alt="" /> -->
-	<p>Copyright © <a href="index.html">Indar</a> 2018. All Rights Reserved.</p>
-</footer>
-
-
-
-<script type="text/javascript" src="script/jquery-2.1.0.min.js"></script>
-
-<script type="text/javascript" src="script/common.js"></script>
 
 </body>
 </html>
