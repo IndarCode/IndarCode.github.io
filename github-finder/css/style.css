@@ -1,0 +1,161 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color: #252525;
+	box-sizing: border-box;
+	font-weight: 300;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+a:focus, input:focus{
+	outline: none;
+}
+
+
+
+
+
+header {
+    padding: 1% 4%;
+    background-color: #c50000;
+}
+section {
+    padding: 0% 4%;
+    margin: 3% auto;
+}
+header a {
+    display: block;
+    font-weight: 900;
+    color: #fff;
+    font-size: 25px;
+}
+header a span {
+    font-size: 35px;
+    color: #fff;
+    line-height: 25px;
+}
+
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.search-holder input {
+    border: 1px solid #c5c5c5;
+    padding: 12px 30px;
+    margin-top: 25px;
+    width: 80%;
+}
+
+
+
+section#profile {
+    width: 92%;
+    margin: 0 auto;
+    background-color: #efefef;
+}
+.info-holder {
+    display: flex;
+}
+.avatar {
+    width: 230px;
+    text-align: center;
+}
+.avatar a {
+    background-color: #d20000;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 9px 20px;
+    margin: 8px auto 0;
+    display: block;
+}
+.info {
+    width: calc(100% - 230px);
+    padding-left: 7%;
+}
+ul.sub-info {
+    margin-bottom: 30px;
+}
+ul.sub-info li {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px 12px 4px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #fff;
+    border-radius: 2px;
+}
+.pink {
+    background-color: #ec0044;
+}
+.blue {
+    background-color: #07774c;
+}
+.grey {
+    background-color: #5a5a5a;
+}
+.blue-2 {
+    background-color: #0080c7;
+}
+ul.main-info li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+ul.main-info li span{
+	font-weight: 600;
+}
+
+
+ul#repos li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.repo-name {
+    width: 60%;
+}
+ul#repos li h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.repo-name p span {
+    font-weight: 500;
+    font-size: 14px;
+}
+ul#repos li h3 span {
+    font-size: 14px;
+}
+.repo-info {
+    width: 25%;
+}
+.repo-info span {
+    font-size: 10px;
+    color: #fff;
+    padding: 3px 10px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.repo-link a {
+    color: #fff;
+    background-color: #3a3a3a;
+    padding: 8px 20px;
+    font-size: 12px;
+    display: inline-block;
+}
