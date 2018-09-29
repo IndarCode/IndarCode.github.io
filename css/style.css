@@ -24,7 +24,7 @@ a:hover{
 }
 
 
-
+/*Plugins css*/
 
 .addthis_inline_share_toolbox {
     display: inline-block;
@@ -37,6 +37,14 @@ a:hover{
     padding: 0px !important;
     background: none !important;
 }
+div#layout {
+    max-width: 70%;
+    margin: 25vh auto 0;
+}
+
+
+
+
 
 
 .main-color{
