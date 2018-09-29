@@ -8,6 +8,8 @@
     <!--CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="prism.css" rel="stylesheet" />
+
 
     <title>Indar: Front End Developer</title>
   </head>
@@ -43,13 +45,39 @@
           <div class="content-container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. Vestibulum pellentesque tempus odio ac congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam egestas posuere lorem in scelerisque. Integer at ante ex. Etiam tempus mi in mi sagittis, non consequat velit accumsan. Fusce tincidunt, elit nec accumsan molestie, elit tellus congue libero, id ultrices ex magna nec tortor. Integer at gravida ligula, non tincidunt augue. Morbi imperdiet, velit ac semper vulputate, odio urna volutpat massa, ut sollicitudin tellus libero sed lorem.</p>
 
+ <pre><code class="language-css">:root{
+  --red-color : #d00d0f;
+  --grey-color: #fafafa;
+  --font-color : #4a4a4a;
+  --white-color:#fff;
+
+  --sectionHeading: 60px;
+  --abril :'Abril Fatface', cursive;
+}
+::-moz-selection { /* Code for Firefox */
+     color: #fff; 
+    background: #d00d0f;
+}
+::selection {
+    color: #fff; 
+    background: #d00d0f;
+}
+</code></pre>
 
 
 <h2>Quisque ultrices augue quis lectus <span>tincidunt pretium</span>. </h2>
 
 <p>Donec molestie vel augue vitae faucibus. Nunc eu ipsum sem. Ut viverra eget lacus luctus posuere. Nunc elementum ipsum fermentum sagittis egestas. <span>Duis efficitur turpis ut leo condimentum, in eleifend libero ullamcorper. Vivamus id ullamcorper nisi. Proin sed rhoncus ante. Quisque leo tortor, vehicula quis urna congue, molestie ultrices odio. Cras interdum quam non consectetur semper.</span> Duis urna magna, efficitur at lectus nec, tristique pharetra orci. Mauris tincidunt tincidunt massa, at consectetur lacus ultrices eget. Praesent mollis odio vel mi convallis ultricies. </p>
 
-
+<pre><code class="language-javascript">$(window).scroll(function() {
+  if($(window).scrollTop() >= 630){
+    $('header').addClass('showHeader');
+  }
+  else{
+    $('header').removeClass('showHeader');
+  }
+});
+</code></pre>
 
 <h2>Quisque ultrices <span>augue quis lectus</span> tincidunt pretium.</h2> 
 <p>Quisque ultrices augue quis lectus tincidunt pretium. Quisque eu semper ex. Phasellus non neque magna. Donec accumsan, nunc vel dapibus interdum, libero nisi pellentesque nisi, in venenatis purus lectus luctus arcu. Aenean eget turpis sit amet dui suscipit tempor at ut nisi. Sed placerat nisi et ligula suscipit, sit amet tincidunt odio sodales. Nam quis laoreet ipsum.</p>
@@ -61,7 +89,9 @@
   <p>Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. </p>
 </div>
 
-
+<div class="code-editor">
+   <iframe src="https://stackblitz.com/edit/react-router-dom-4-nested-example?embed=1&file=index.js" ></iframe>
+</div>
 
 
 <p>Maecenas egestas massa ac ante ornare vulputate. Vivamus id nibh et tortor euismod egestas vel ut nisi. In eleifend est eu nunc tempor, suscipit mattis ex euismod. Phasellus lorem justo, rutrum in lorem ac, sodales vestibulum odio. Quisque scelerisque cursus tincidunt. Aliquam condimentum varius lorem nec sodales. In tempor feugiat ultricies. Sed tempus eleifend malesuada. Maecenas mollis diam id egestas pulvinar. Suspendisse nec pulvinar felis. Donec vel purus sed urna volutpat placerat.</p>
@@ -116,7 +146,7 @@ s.setAttribute('data-timestamp', +new Date());
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 
-
+  <script src="prism.js"></script>
   <!-- Go to www.addthis.com/dashboard to customize your tools --> 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baf5e219b1c14ce"></script>
   </body>
