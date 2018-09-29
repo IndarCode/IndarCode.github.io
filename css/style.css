@@ -31,10 +31,10 @@ a:hover{
     vertical-align: middle;
 }
 .at-resp-share-element .at-share-btn:focus, .at-resp-share-element .at-share-btn:hover {
-    transform: translateY(0px);
+    transform: translateY(0px) !important;
 }
 .at-style-responsive .at-share-btn {
-    padding: 0px;
+    padding: 0px !important;
     background: none !important;
 }
 
