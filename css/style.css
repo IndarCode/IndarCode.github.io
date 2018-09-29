@@ -22,6 +22,23 @@ a:hover{
 	font-weight: 900;
 	color: #d1708d;
 }
+
+
+
+
+.addthis_inline_share_toolbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+.at-resp-share-element .at-share-btn:focus, .at-resp-share-element .at-share-btn:hover {
+    transform: translateY(0px);
+}
+.at-style-responsive .at-share-btn {
+    padding: 0px;
+    background: none !important;
+}
+
+
 .main-color{
 	color: #d1708d;
 }
