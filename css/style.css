@@ -37,7 +37,7 @@ a:hover{
     padding: 0px !important;
     background: none !important;
 }
-div#layout {
+div#disqus_thread {
     max-width: 70%;
     margin: 25vh auto 0;
 }
