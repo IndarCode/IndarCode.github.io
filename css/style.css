@@ -78,6 +78,7 @@ header {
 .content h1.one span {
     font-weight: 900;
     font-family: arial;
+    font-size: 48px;
 }
 ul.nav li {
     display: inline-block;
