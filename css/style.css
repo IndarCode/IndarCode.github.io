@@ -95,6 +95,9 @@ ul.nav li a:hover {
     font-weight: 900;
     color: #252525;
 }
+.content ul.nav li a:hover {
+    color: #d1708d;
+}
 .share h4 {
     text-transform: uppercase;
     font-size: 18px;
