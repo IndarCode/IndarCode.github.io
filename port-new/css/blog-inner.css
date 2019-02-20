@@ -1,3 +1,8 @@
+.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
+    float: left;
+    height: 40px !important;
+    width: 40px !important;
+}
 section.in.blog-inner > header{
     background-color: #d0708d;
 }
