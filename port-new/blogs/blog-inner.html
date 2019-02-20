@@ -62,13 +62,28 @@
 
              <pre><code class="language-js">$ npm install prismjs</code></pre>
 
+
              <p>Suspendisse malesuada nisl a ullamcorper interdum. Nullam elementum ante nisi, id aliquet velit viverra ut. Pellentesque elit ex, cursus in risus sed, gravida gravida arcu. Donec nec tellus orci. Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. Proin purus purus, ullamcorper sed tristique eget, interdum ut metus.</p>
+
+            <pre><code class="language-js">import Prism from 'prismjs';</code></pre>
 
              <main>
               <p>Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. </p>
              </main>
 
              <p>Maecenas egestas massa ac ante ornare vulputate. Vivamus id nibh et tortor euismod egestas vel ut nisi. In eleifend est eu nunc tempor, suscipit mattis ex euismod. Phasellus lorem justo, rutrum in lorem ac, sodales vestibulum odio. Quisque scelerisque cursus tincidunt. Aliquam condimentum varius lorem nec sodales. In tempor feugiat ultricies. Sed tempus eleifend malesuada. Maecenas mollis diam id egestas pulvinar. Suspendisse nec pulvinar felis. Donec vel purus sed urna volutpat placerat.</p>
+             <pre>
+               <code class="language-js">
+                var Prism = require('prismjs');
+var loadLanguages = require('prismjs/components/');
+loadLanguages(['haml']);
+
+// The code snippet you want to highlight, as a string
+var code = "= ['hi', 'there', 'reader!'].join \" \"";
+
+// Returns a highlighted HTML string
+var html = Prism.highlight(code, Prism.languages.haml, 'haml');</code>
+             </pre>
           </div>
           <div class="related-blogs-holder">
             <h2>Quisque ultrices augue quis lectus tincidunt pretium. </h2>
