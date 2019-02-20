@@ -5,8 +5,13 @@
 	list-style: none;
 	text-decoration: none;
 	color: #252525;
-    font-family: 'Roboto', sans-serif;
 	font-size: 21px;
+}
+h1,h2,h3,h4,h5,h6,li,a,span,p,div,section,main{
+    font-family: 'Roboto', sans-serif;
+}
+pre code{
+    font-size: 19px;
 }
 img{
 	display: block;
