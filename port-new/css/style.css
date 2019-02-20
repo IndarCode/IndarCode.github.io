@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 	font-size: 21px;
 }
-pre.language-js code * {
+pre.language-js code *, pre.language-js code  {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
     font-size: 19px;
 }
@@ -294,6 +294,10 @@ a.logo {
 
 ul.nav li a {
     font-size: 14px;
+}
+pre.language-js code *, pre.language-js code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+    font-size: 17px;
 }
 }
 
