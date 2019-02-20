@@ -75,14 +75,15 @@
              <pre>
                <code class="language-js">
                 var Prism = require('prismjs');
-var loadLanguages = require('prismjs/components/');
-loadLanguages(['haml']);
+                var loadLanguages = require('prismjs/components/');
+                loadLanguages(['haml']);
 
-// The code snippet you want to highlight, as a string
-var code = "= ['hi', 'there', 'reader!'].join \" \"";
+                // The code snippet you want to highlight, as a string
+                var code = "= ['hi', 'there', 'reader!'].join \" \"";
 
-// Returns a highlighted HTML string
-var html = Prism.highlight(code, Prism.languages.haml, 'haml');</code>
+                // Returns a highlighted HTML string
+                var html = Prism.highlight(code, Prism.languages.haml, 'haml');
+            </code>
              </pre>
           </div>
           <div class="related-blogs-holder">

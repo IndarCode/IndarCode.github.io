@@ -5,8 +5,10 @@
 	list-style: none;
 	text-decoration: none;
 	color: #252525;
-	font-family: 'Roboto', sans-serif;
 	font-size: 21px;
+}
+:not([name^="language"]){
+    font-family: 'Roboto', sans-serif;
 }
 img{
 	display: block;
