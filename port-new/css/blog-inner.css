@@ -147,8 +147,10 @@ header.blog-header .heading-content h3 {
 header.blog-header .social-share span {
     font-size: 15px;
 }
-header.blog-header .social-share a img {
-    max-width: 23px;
+.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
+    float: left;
+    height: 25px !important;
+    width: 25px !important;
 }
 .container-content {
     margin: 50px auto 50px;
@@ -222,8 +224,10 @@ header.blog-header .social-share span {
     font-size: 16px;
     vertical-align: text-bottom;
 }
-header.blog-header .social-share a img {
-    max-width: 25px;
+.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
+    float: left;
+    height: 25px !important;
+    width: 25px !important;
 }
 .social-share {
     margin-top: 30px;
