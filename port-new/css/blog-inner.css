@@ -1,0 +1,277 @@
+section.in.blog-inner > header{
+    background-color: #d0708d;
+}
+.blog-inner > header.shadow{
+    box-shadow: 0px 0px 6px rgb(8, 8, 8, 0.35);
+}
+section.blog-holder header.blog-header {
+    min-height: 38vh;
+    background-color: #d0708d;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3%;
+}
+header.blog-header .header-container {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header.blog-header .heading-content h1 {
+    font-size: 73px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+header.blog-header .heading-content h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+header.blog-header .social-share span {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+header.blog-header .social-share * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-share a {
+    margin: 0 4px;
+}
+.container-content {
+    margin: 7% auto 15%;
+    max-width: 70%;
+}
+.container-content p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0px;
+    margin-bottom: 5vh;
+}
+.container-content h2 {
+    font-size: 35px;
+    margin: 8vh 0 3vh;
+}
+.container-content h2 span{
+    font-size: 35px;
+    display: inline-block;
+    color: #d0708d;
+    font-weight: 800
+}
+.container-content p span {
+    background-color: #f6e4ea;
+}
+main {
+    border-left: 10px solid #f19eb7;
+    background-color: #f9ebef;
+    padding: 30px 50px;
+    max-width: 92%;
+    margin: 8vh 0 8vh 8%;
+}
+main p{
+	margin-bottom: 0px !important;
+}
+.related-blogs-holder {
+    max-width: 85%;
+    margin: 0 auto 10%;
+}
+.related-blogs-holder {
+    max-width: 85%;
+    margin: 0 auto 10%;
+    background-color: #f9eef1;
+    border-left: 10px solid #e6b2c1;
+    padding: 60px;
+}
+.related-blogs-holder h2{
+	font-size: 35px;
+    margin: 0vh 0 3vh;
+}
+.related-blogs-holder ul {
+    margin-left: 50px;
+}
+.related-blogs-holder ul li {
+    list-style: upper-roman;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.related-blogs-holder ul li a {
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+.related-blogs-holder ul li a strong {
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+header.blog-header .header-container {
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+}
+section.blog-holder header.blog-header {
+    min-height: 45vh;
+    padding-bottom: 5%;
+}
+header.blog-header .heading-content h1 {
+    font-size: 38px;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+header.blog-header .heading-content h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+.social-share {
+    margin-top: 20px;
+}
+header.blog-header .social-share span {
+    font-size: 15px;
+}
+header.blog-header .social-share a img {
+    max-width: 23px;
+}
+.container-content {
+    margin: 50px auto 50px;
+    max-width: 85%;
+}
+.container-content p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.container-content h2 {
+    font-size: 22px;
+    margin: 50px 0 20px;
+}
+.container-content h2 span {
+    font-size: 22px;
+    font-weight: 800;
+}
+.container-content p span.highlight {
+    font-size: 16px;
+}
+.container-content main {
+    border-left: 7px solid #f19eb7;
+    padding: 20px 20px;
+    max-width: 95%;
+    margin: 30px 0 30px;
+}
+.related-blogs-holder {
+    max-width: 85%;
+    border-left: 8px solid #e6b2c1;
+    padding: 40px 20px;
+}
+.related-blogs-holder h2 {
+    font-size: 22px;
+    margin: 0 0 30px;
+}
+.related-blogs-holder ul {
+    margin-left: 0px;
+}
+.related-blogs-holder ul li a {
+    font-size: 16px;
+    padding-left: 0px;
+}
+.related-blogs-holder ul li a strong {
+    font-size: 16px;
+    text-decoration: underline;
+}
+.related-blogs-holder ul li {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+section.blog-holder header.blog-header {
+    min-height: 30vh;
+}
+header.blog-header .header-container {
+    max-width: 85%;
+}
+header.blog-header .heading-content h1 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+header.blog-header .heading-content h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+header.blog-header .social-share span {
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+header.blog-header .social-share a img {
+    max-width: 25px;
+}
+.social-share {
+    margin-top: 30px;
+}
+.container-content {
+    margin: 50px auto 50px;
+    max-width: 80%;
+}
+.container-content p {
+    font-size: 18px;
+}
+.container-content h2, .container-content h2 span {
+    font-size: 25px;
+    font-weight: 800;
+}
+.related-blogs-holder {
+    max-width: 80%;
+}
+.related-blogs-holder ul li {
+    margin-bottom: 15px;
+}
+.related-blogs-holder ul li a, .related-blogs-holder ul li a strong {
+    font-size: 18px;
+}
+.related-blogs-holder h2 {
+    font-size: 25px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+header.blog-header .heading-content h1 {
+    font-size: 60px;
+}
+header.blog-header .heading-content h3 {
+    font-size: 30px;
+}
+.container-content {
+    max-width: 75%;
+}
+.container-content p {
+    font-size: 19px;
+    line-height: 26px;
+}
+.container-content h2, .container-content h2 span {
+    font-size: 28px;
+}
+.container-content main {
+    border-left: 8px solid #f19eb7;
+}
+.related-blogs-holder h2 {
+    font-size: 28px;
+}
+.related-blogs-holder ul li a, .related-blogs-holder ul li a strong {
+    font-size: 20px;
+}
+}

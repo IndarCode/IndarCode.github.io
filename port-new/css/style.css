@@ -1,0 +1,352 @@
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	color: #252525;
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+}
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a:focus, input:focus, textarea:focus{
+	outline: none;
+}
+
+
+
+/*Plugins css*/
+
+.addthis_inline_share_toolbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+.at-resp-share-element .at-share-btn:focus, .at-resp-share-element .at-share-btn:hover {
+    transform: translateY(0px) !important;
+}
+.at-style-responsive .at-share-btn {
+    padding: 0px !important;
+    background: none !important;
+}
+div#disqus_thread {
+    max-width: 70%;
+    margin: 25vh auto 0;
+}
+.code-editor iframe {
+    width: 100%;
+    height: 400px;
+}
+.code-editor {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+
+
+
+/*color css*/
+
+.main-color{
+	color: #d1708d;
+}
+.bg-main-color{
+	background-color: #d1708d;
+}
+
+
+
+
+/*header css*/
+section.in > header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    padding: 1% 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    z-index: 99;
+}
+section.in > header.shadow {
+    box-shadow: 0px 0px 6px rgb(8, 8, 8, 0.35);
+}
+/*nav css */
+
+ul.nav li {
+    display: inline-block;
+    position: relative;
+}
+ul.nav li a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 0 25px;
+    font-weight: 400;
+}
+ul.nav li:last-child a{
+    padding: 0 0px 0 25px;
+}
+ul.nav li a:hover {
+    font-weight: 900;
+    color: #252525;
+}
+ul.nav li:after {
+    content: ' ';
+    display: block;
+    height: 18px;
+    width: 1px;
+    background-color: #545454;
+    position: absolute;
+    top: 5px;
+}
+ul.nav li:first-child:after {
+    display: none;
+}
+
+
+
+.share h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.social h4 {
+    font-size: 18px;
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.social {
+    position: fixed;
+    bottom: 8%;
+    left: 5%;
+}
+.social a {
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/sprite.png);
+    background-position: 0 0;
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: bottom;
+}
+.social a.fb {
+    background-position: 0 0;
+    width: 15px;
+}
+.social a.in {
+    background-position: -25px 0;
+}
+.social a.gi {
+    background-position: -58px 0;
+}
+.social a.tw {
+    background-position: -94px 0;
+}
+.social a.wt {
+    background-position: -129px 0;
+    width: 22px;
+}
+.social a.fb:hover {
+    background-position: 0 -29px;
+}
+.social a.in:hover {
+    background-position: -25px -29px;
+}
+.social a.gi:hover {
+    background-position: -58px -29px;
+}
+.social a.tw:hover {
+    background-position: -94px -29px;
+}
+.social a.wt:hover {
+    background-position: -129px -29px;
+    width: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #d1708d;
+    color: #fff;
+    font-weight: 300;
+    line-height: 14px;
+}
+footer.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+	
+*{
+	font-size: 18px;
+	line-height: 23px;
+}
+	a.logo {
+    max-width: 110px;
+}
+header {
+    padding: 15px 5%;
+    left: 0;
+    right: 0;
+}
+section.in header {
+    padding: 15px 5%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+}
+
+
+
+@media (min-width:768px) and (max-width: 1024px){
+header {
+    padding: 15px 0;
+}
+a.logo {
+    max-width: 140px;
+}
+
+
+}
+
+
+
+@media (min-width:1200px) and (max-width: 1400px){
+*{
+	font-size: 18px;
+}
+a.logo {
+    width: 140px;
+}
+
+ul.nav li a {
+    font-size: 14px;
+}
+}
+
+
+@media (max-width: 1024px){
+    /*Hamburger menu icon css*/
+    .vis-desk{display: none !important;}
+    .hamburger-box { width: 30px; height: 24px; display: inline-block; position: relative; float: right; margin: 3px -2px 0 0; }
+    .hamburger-inner { display: block; top: 50%; margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 32px; height: 2px; background-color: #282727; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after { content: ""; display: block; }
+    .hamburger-inner::before { top: -8px; }
+    .hamburger-inner::after { bottom: -8px; }
+    .hamburger--squeeze .hamburger-inner { transition-duration: 0.1s; transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--squeeze .hamburger-inner::before { transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
+    .hamburger--squeeze .hamburger-inner::after { transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--squeeze.is-active .hamburger-inner { transform: rotate(45deg); transition-delay: 0.14s; transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger--squeeze.is-active .hamburger-inner::before { top: 0; opacity: 0; transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
+    .hamburger--squeeze.is-active .hamburger-inner::after { bottom: 0; transform: rotate(-90deg); transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .mob-nav {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    top: -150px;
+    padding: 20px 0;
+    transition: all 0.6s ease;
+    z-index: 9; 
+}
+.mob-nav.isActive{
+    top: 62px;
+    box-shadow: 0px -2px 8px 0px #5a5a5a;
+        border-top: 1px solid #d4d4d4;
+}
+.mob-nav li:last-child a{
+    padding: 8px 7.5%;
+}
+.mob-nav li:after{
+    display: none;
+}
+.mob-nav li {
+    display: block;
+}
+.mob-nav li a {
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    padding: 8px 7.5%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+}
+
+@media (min-width: 1025px){
+    .vis-mob{display: none !important;}
+span.hamburger-box.hamburger.hamburger--squeeze {
+    display: none;
+}
+}

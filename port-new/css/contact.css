@@ -1,0 +1,223 @@
+section.contactPageSection {
+    margin-top: 15vh;
+    display: flex;
+    max-width: 75%;
+    margin: 20vh auto 0;
+    align-items: center;
+}
+.contactContent {
+    text-align: right;
+    padding-left: 9%;
+}
+.contactContent h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contactForm input, .contactForm textarea {
+    background-color: rgba(209, 112, 141, 0.18);
+    border: none;
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #252525;
+}
+.contactForm textarea {
+	height: 150px;
+}
+.contactForm form {
+    max-width: 100%;
+}
+::placeholder {
+ text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contactForm {
+    width: 40%;
+}
+button.blankButton {
+    background-color: #d1708d;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 17px 20px;
+    width: 100%;
+    font-weight: 600;
+}
+.contactContent .social {
+    position: static;
+    margin-top: 20px;
+}
+.contactContent p i {
+    font-weight: 800;
+    font-style: normal;
+}
+.contactContent p{
+	margin-bottom: 20px;
+}
+.contactContent ul li a:hover{
+    color:#d1708d;
+    font-weight: 600;
+}
+.contactContent .social a {
+    margin: 0 3px;
+}
+.contactContent ul li a:before {
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    width: 30px;
+    background-image: url(../images/sprite.png);
+    background-position: 0px -69px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    
+section.contactPageSection {
+    max-width: 90%;
+    margin: 140px auto;
+    flex-direction: column;
+}
+.contactContent {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-left: 0;
+}
+.contactContent h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.contactContent p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contactContent ul li a {
+    font-size: 16px;
+}
+.contactForm {
+    width: 100%;
+    order: 2;
+}
+.contactForm form {
+    max-width: 100%;
+}
+.contactContent ul li a:before {
+    height: 20px;
+    width: 26px;
+    background-position: 0px -57px;
+    background-size: 125px;
+}
+.social h4 {
+    font-size: 16px;
+}
+.social a.fb {
+    background-position: 0 0;
+    width: 14px;
+}
+.social a {
+    background-size: 130px;
+}
+.social a.in {
+    background-position: -18px 0;
+}
+.social a.gi {
+    background-position: -50px 0;
+}
+.social a.tw {
+    background-position: -80px 0;
+}
+.social a.wt {
+    background-position: -112px 0;
+    width: 18px;
+}
+
+}
+
+
+
+@media (min-width:768px) and (max-width: 1024px){
+
+
+section.contactPageSection {
+    max-width: 90%;
+    margin: 110px auto;
+    flex-direction: column;
+}
+.contactContent {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contactContent p {
+    margin-bottom: 20px;
+    max-width: 85%;
+    margin: 0 auto 20px;
+    line-height: 27px;
+}
+.contactContent h2 {
+    font-size: 45px;
+}
+.contactForm {
+    width: 70%;
+    order: 2;
+    margin: 0 auto;
+}
+.contactContent {
+    padding-left: 0;
+}
+.contactForm form {
+    max-width: 100%;
+}
+
+
+}
+
+
+
+@media (min-width:1200px) and (max-width: 1400px){
+
+.contactForm form {
+    max-width: 90%;
+}
+.contactForm {
+    width: 35%;
+}
+.contactContent {
+    width: 65%;
+    padding-left: 100px;
+}
+.contactContent h2 {
+    font-size: 40px;
+}
+section.contactPageSection {
+    max-width: 85%;
+}
+}
