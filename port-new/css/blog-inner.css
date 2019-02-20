@@ -75,8 +75,8 @@ main {
     border-left: 10px solid #f19eb7;
     background-color: #f9ebef;
     padding: 30px 50px;
-    max-width: 92%;
-    margin: 8vh 0 8vh 8%;
+    max-width: 100%;
+    margin: 8vh 0 8vh 0;
 }
 main p{
 	margin-bottom: 0px !important;
