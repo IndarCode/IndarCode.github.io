@@ -8,7 +8,8 @@
     font-family: 'Roboto', sans-serif;
 	font-size: 21px;
 }
-pre code{
+pre.language-js code * {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
     font-size: 19px;
 }
 img{
