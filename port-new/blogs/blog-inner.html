@@ -8,6 +8,7 @@
     <!--CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/blog-inner.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <title>Indar: Front End Developer</title>
@@ -58,6 +59,8 @@
 
              <h2>Quisque ultrices <span>augue quis lectus</span> tincidunt pretium. </h2>
              <p>Quisque ultrices augue quis lectus tincidunt pretium. Quisque eu semper ex. Phasellus non neque magna. Donec accumsan, nunc vel dapibus interdum, libero nisi pellentesque nisi, in venenatis purus lectus luctus arcu. Aenean eget turpis sit amet dui suscipit tempor at ut nisi. Sed placerat nisi et ligula suscipit, sit amet tincidunt odio sodales. Nam quis laoreet ipsum.</p>
+
+             <pre><code>$ npm install prismjs</code></pre>
 
              <p>Suspendisse malesuada nisl a ullamcorper interdum. Nullam elementum ante nisi, id aliquet velit viverra ut. Pellentesque elit ex, cursus in risus sed, gravida gravida arcu. Donec nec tellus orci. Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. Proin purus purus, ullamcorper sed tristique eget, interdum ut metus.</p>
 
@@ -111,6 +114,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../script/prism.js"></script>
     <script>
       $(window).on('scroll', function () {
         $('.blog-inner > header').toggleClass('shadow', $(document).scrollTop() > 170);
