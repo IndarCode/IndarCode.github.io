@@ -39,7 +39,7 @@ a:focus, input:focus, textarea:focus{
 }
 div#disqus_thread {
     max-width: 70%;
-    margin: 25vh auto 0;
+    margin: 15vh auto 15vh;
 }
 .code-editor iframe {
     width: 100%;
