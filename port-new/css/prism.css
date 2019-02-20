@@ -50,14 +50,14 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
+	padding: 1em 2em;
 	margin: .5em 0;
 	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #fbf3f6;
+	background: rgba(249, 235, 239, 0.35);
 }
 
 /* Inline code */
