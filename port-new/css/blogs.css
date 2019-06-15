@@ -50,9 +50,10 @@
     padding-left: 10%;
 }
 .blogs-holder .column-text h1 {
-    font-size: 72px;
+    font-size: 60px;
     letter-spacing: -1px;
-    line-height: 76px;
+    line-height: 65px;
+    text-transform: capitalize;
 }
 .blogs-holder .column-text h3 {
     color: #d1708d;
@@ -183,8 +184,8 @@
     padding-left: 8%;
 }
 .blogs-holder .column-text h1 {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 45px;
+    line-height: 50px;
 }
 .blogs-holder .column-text h3 {
     font-size: 27px;

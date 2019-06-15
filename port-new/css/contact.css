@@ -1,13 +1,12 @@
 section.contactPageSection {
     margin-top: 15vh;
     display: flex;
-    max-width: 75%;
-    margin: 20vh auto 0;
+    max-width: 55%;
+    margin: 25vh auto 0;
     align-items: center;
 }
 .contactContent {
-    text-align: right;
-    padding-left: 9%;
+    text-align: center;
 }
 .contactContent h2 {
     font-size: 50px;
@@ -45,6 +44,7 @@ section.contactPageSection {
 
 .contactForm {
     width: 40%;
+    display: none;
 }
 button.blankButton {
     background-color: #d1708d;
@@ -211,13 +211,13 @@ section.contactPageSection {
     width: 35%;
 }
 .contactContent {
-    width: 65%;
-    padding-left: 100px;
+    width: 100%;
+    padding-left: 0;
 }
 .contactContent h2 {
     font-size: 40px;
 }
 section.contactPageSection {
-    max-width: 85%;
+    max-width: 65%;
 }
 }

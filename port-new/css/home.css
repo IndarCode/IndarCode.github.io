@@ -91,6 +91,7 @@ section.home .bodyContainer {
 }
 .home header {
     background-color: transparent;
+    box-shadow: none;
 }
 .content h1.one {
     margin-bottom: 25px;

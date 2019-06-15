@@ -88,6 +88,9 @@ ul.nav li {
     display: inline-block;
     position: relative;
 }
+ul.nav li.active-nav a {
+    font-weight: 900;
+}
 ul.nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -188,13 +191,13 @@ ul.nav li:first-child:after {
 
 
 footer {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    font-size: 14px;
-    background-color: #d1708d;
-    color: #fff;
-    font-weight: 300;
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
     line-height: 14px;
+    border-top: 1px solid #e0e0e0;
 }
 footer.fixed {
     position: fixed;
@@ -250,22 +253,16 @@ footer.fixed {
 	line-height: 23px;
 }
 	a.logo {
-    max-width: 110px;
-}
-header {
-    padding: 15px 5%;
-    left: 0;
-    right: 0;
+    max-width: 45px;
+    display: block;
 }
 section.in header {
-    padding: 15px 5%;
+    padding: 10px 5%;
     background-color: #fff;
     left: 0;
     right: 0;
+    box-shadow: 0px -3px 7px #666;
 }
-
-
-
 
 }
 
@@ -274,6 +271,7 @@ section.in header {
 @media (min-width:768px) and (max-width: 1024px){
 header {
     padding: 15px 0;
+    box-shadow: 0px -3px 7px #666;
 }
 a.logo {
     max-width: 140px;
@@ -307,10 +305,11 @@ pre.language-js code *, pre.language-js code {
     .vis-desk{display: none !important;}
     .hamburger-box { width: 30px; height: 24px; display: inline-block; position: relative; float: right; margin: 3px -2px 0 0; }
     .hamburger-inner { display: block; top: 50%; margin-top: -2px; }
-    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 32px; height: 2px; background-color: #282727; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 31px; height: 2px; background-color: #282727; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after { width: 22px;}
     .hamburger-inner::before, .hamburger-inner::after { content: ""; display: block; }
-    .hamburger-inner::before { top: -8px; }
-    .hamburger-inner::after { bottom: -8px; }
+    .hamburger-inner::before { top: -7px; }
+    .hamburger-inner::after { bottom: -7px; }
     .hamburger--squeeze .hamburger-inner { transition-duration: 0.1s; transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .hamburger--squeeze .hamburger-inner::before { transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
     .hamburger--squeeze .hamburger-inner::after { transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
@@ -323,13 +322,13 @@ pre.language-js code *, pre.language-js code {
     left: 0;
     right: 0;
     background-color: #fff;
-    top: -150px;
+    top: -200px;
     padding: 20px 0;
     transition: all 0.6s ease;
     z-index: 9; 
 }
 .mob-nav.isActive{
-    top: 62px;
+    top: 50px;
     box-shadow: 0px -2px 8px 0px #5a5a5a;
         border-top: 1px solid #d4d4d4;
 }
@@ -349,6 +348,11 @@ pre.language-js code *, pre.language-js code {
     padding: 8px 7.5%;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+footer {
+    padding: 15px;
+    font-size: 11px;
+    color: #666;
 }
 }
 

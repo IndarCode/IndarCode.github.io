@@ -20,7 +20,7 @@
         <ul class="nav vis-desk">
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Bits</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
+          <li class="active-nav"><a href="blogs.html">Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="Indrjit-Resume.pdf">Resume</a></li>
         </ul>
@@ -36,17 +36,21 @@
       
 
       <section class="blogs-holder">
+        <div class="filter">
+
+        </div>
 
         <div class="container">
-          <div class="row left">
+          
+          <!-- <div class="row left">
             <a href="blogs/blog-inner.html" >
             <div class="column-img">
               <img src="images/blog/1.png" alt="" />
             </div>
             <div class="column-text left">
-              <h1>JavaScript :  </h1>
-              <h3>History of the most hated language in this world</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
+              <h1>React Hooks :  </h1>
+              <h3>React works fine without classes</h3>
+              <p>Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes. </p>
             </div>
           </a>
           </div>
@@ -54,12 +58,38 @@
           <div class="row right">
              <a href="blogs/blog-inner.html" >
             <div class="column-text right">
-              <h1>JavaScript :  </h1>
+              <h1>React v16.6.0 :  </h1>
+              <h3>Memo, Suspense and Concurrent rendering</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
+            </div>
+             <div class="column-img">
+              <img src="images/blog/2.png" alt="" />
+            </div>
+             </a>
+          </div> -->
+
+          <div class="row left">
+             <a href="blogs/blog-inner.html" >
+            <div class="column-img">
+              <img src="images/blog/3.png" alt="" />
+            </div>
+            <div class="column-text left">
+              <h1>React Context API :  </h1>
+              <h3>History of the most hated language in this world</h3>
+              <p>Context provides a way to share data between components without having to explicitly pass a prop through every level of the tree. Context is designed to share data that can be considered “global” for a tree of React components. </p>
+            </div>
+             </a>
+          </div>
+
+          <div class="row right">
+             <a href="blogs/blog-inner.html" >
+            <div class="column-text right">
+              <h1>React Elements :  </h1>
               <h3>History of the most hated language in this world</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
             </div>
              <div class="column-img">
-              <img src="images/blog/1.png" alt="" />
+              <img src="images/blog/4.png" alt="" />
             </div>
              </a>
           </div>
@@ -69,7 +99,7 @@
               <img src="images/blog/1.png" alt="" />
             </div>
             <div class="column-text left">
-              <h1>JavaScript :  </h1>
+              <h1>React Lifecycles :  </h1>
               <h3>History of the most hated language in this world</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
             </div>
@@ -79,37 +109,12 @@
           <div class="row right">
              <a href="blogs/blog-inner.html" >
             <div class="column-text right">
-              <h1>JavaScript :  </h1>
+              <h1>Render Props:  </h1>
               <h3>History of the most hated language in this world</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
             </div>
              <div class="column-img">
-              <img src="images/blog/1.png" alt="" />
-            </div>
-             </a>
-          </div>
-          <div class="row left">
-             <a href="blogs/blog-inner.html" >
-            <div class="column-img">
-              <img src="images/blog/1.png" alt="" />
-            </div>
-            <div class="column-text left">
-              <h1>JavaScript :  </h1>
-              <h3>History of the most hated language in this world</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
-            </div>
-             </a>
-          </div>
-
-          <div class="row right">
-             <a href="blogs/blog-inner.html" >
-            <div class="column-text right">
-              <h1>JavaScript :  </h1>
-              <h3>History of the most hated language in this world</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
-            </div>
-             <div class="column-img">
-              <img src="images/blog/1.png" alt="" />
+              <img src="images/blog/2.png" alt="" />
             </div>
              </a>
           </div>
@@ -117,12 +122,25 @@
           <div class="row left">
              <a href="blogs/blog-inner.html" >
             <div class="column-img">
-              <img src="images/blog/1.png" alt="" />
+              <img src="images/blog/3.png" alt="" />
             </div>
             <div class="column-text left">
-              <h1>JavaScript :  </h1>
+              <h1>Best Practices in React :  </h1>
               <h3>History of the most hated language in this world</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
+            </div>
+             </a>
+          </div>
+
+          <div class="row right">
+             <a href="blogs/blog-inner.html" >
+            <div class="column-text right">
+              <h1>GraphQL :  </h1>
+              <h3>History of the most hated language in this world</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lectus vulputate, viverra orci nec, varius lacus. Mauris finibus massa in vestibulum pellentesque. Ut sed vehicula augue. Praesent cursus efficitur est eu luctus. </p>
+            </div>
+             <div class="column-img">
+              <img src="images/blog/2.png" alt="" />
             </div>
              </a>
           </div>
