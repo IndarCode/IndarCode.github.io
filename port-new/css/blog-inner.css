@@ -25,13 +25,13 @@ header.blog-header .header-container {
     align-items: flex-end;
 }
 header.blog-header .heading-content h1 {
-    font-size: 73px;
+    font-size: 3vw;
     font-weight: 800;
     letter-spacing: -2px;
 }
 header.blog-header .heading-content h3 {
     color: #fff;
-    font-size: 36px;
+    font-size: 1.85vw;
     font-weight: 600;
     letter-spacing: -1px;
 }
@@ -52,18 +52,18 @@ header.blog-header .social-share * {
     max-width: 70%;
 }
 .container-content p {
-    font-size: 22px;
+    font-size: 1.12vw;
     font-weight: 400;
-    line-height: 34px;
+    line-height: 1.75vw;
     letter-spacing: 0px;
     margin-bottom: 5vh;
 }
 .container-content h2 {
-    font-size: 35px;
+    font-size: 1.7vw;
     margin: 8vh 0 3vh;
 }
 .container-content h2 span{
-    font-size: 35px;
+    font-size: 1.7vw;
     display: inline-block;
     color: #d0708d;
     font-weight: 800
@@ -93,7 +93,7 @@ main p{
     padding: 60px;
 }
 .related-blogs-holder h2{
-	font-size: 35px;
+	font-size: 1.7vw;
     margin: 0vh 0 3vh;
 }
 .related-blogs-holder ul {
@@ -105,7 +105,7 @@ main p{
     margin-bottom: 10px;
 }
 .related-blogs-holder ul li a {
-    font-size: 22px;
+    font-size: 1.15vw;
     font-weight: 400;
     padding-left: 15px;
 }

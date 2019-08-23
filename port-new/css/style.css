@@ -6,7 +6,7 @@
 	text-decoration: none;
 	color: #252525;
     font-family: 'Roboto', sans-serif;
-	font-size: 21px;
+	font-size: 1.15vw;
 }
 pre.language-js code *, pre.language-js code  {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
@@ -122,15 +122,16 @@ ul.nav li:first-child:after {
 
 .share h4 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 0.9vw;
     letter-spacing: 1px;
 }
 .social h4 {
-    font-size: 18px;
+    font-size: 0.85vw;
     font-weight: 900;
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    line-height: 0.85vw;
 }
 .social {
     position: fixed;

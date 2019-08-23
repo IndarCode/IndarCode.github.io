@@ -3,7 +3,7 @@
 
 
 section.about-holder {
-    max-width: 88%;
+    max-width: 85%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -11,12 +11,17 @@ section.about-holder {
     margin-top: 17vh;
 }
 section.about-holder .about-img {
-    width: 55%;
+    width: 20vw;
 }
 .about-content {
-    width: 45%;
+    width: calc(100% - 20vw);
     padding-left: 100px;
     text-align: right;
+}
+.about-content img{
+    width: 34vw;
+    text-align: right;
+    display: inline-block;
 }
 .about-content .social {
     position: static;
@@ -34,9 +39,8 @@ section.about-holder .about-img {
     letter-spacing: -1px;
 }
 .about-content a.resume-btn {
-    font-size: 16px;
+    font-size: 0.8vw;
     font-weight: 900;
-    letter-spacing: 2px;
     margin-top: 30px;
     display: inline-block;
     text-decoration: underline;

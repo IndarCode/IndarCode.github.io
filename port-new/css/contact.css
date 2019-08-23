@@ -9,7 +9,7 @@ section.contactPageSection {
     text-align: center;
 }
 .contactContent h2 {
-    font-size: 50px;
+    font-size: 2.5vw;
     margin-bottom: 20px;
 }
 .contactForm input, .contactForm textarea {
@@ -65,7 +65,7 @@ button.blankButton {
     font-style: normal;
 }
 .contactContent p{
-	margin-bottom: 20px;
+	margin-bottom: 5vh;
 }
 .contactContent ul li a:hover{
     color:#d1708d;
