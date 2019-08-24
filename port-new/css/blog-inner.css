@@ -258,11 +258,6 @@ header.blog-header .social-share span {
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){
-.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
-    float: left;
-    height: 36px !important;
-    width: 36px !important;
-}
 .container-content {
     max-width: 75%;
 }
