@@ -1,7 +1,7 @@
 .at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
     float: left;
-    height: 40px !important;
-    width: 40px !important;
+    height: 2vw !important;
+    width: 2vw !important;
 }
 section.in.blog-inner > header{
     background-color: #d0708d;
@@ -36,7 +36,7 @@ header.blog-header .heading-content h3 {
     letter-spacing: -1px;
 }
 header.blog-header .social-share span {
-    font-size: 18px;
+    font-size: 0.9vw;
     font-weight: 800;
     letter-spacing: 1px;
 }
