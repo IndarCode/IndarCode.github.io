@@ -126,12 +126,11 @@ ul.nav li:first-child:after {
     letter-spacing: 1px;
 }
 .social h4 {
-    font-size: 0.85vw;
+    font-size: 15px;
     font-weight: 900;
     display: inline-block;
-    vertical-align: middle;
     margin-right: 10px;
-    line-height: 0.85vw;
+    line-height: 15px;
 }
 .social {
     position: fixed;

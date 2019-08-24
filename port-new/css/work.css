@@ -58,7 +58,7 @@ section.workHolderSection.bodyContainer {
     transition: all 0.5s ease-in-out 0s;
 }
 .workHolderSection .workContainer .workHolder .workHeading h2 {
-    font-size: 35px;
+    font-size: 1.8vw;
     text-align: center;
     color: #252525;
     font-weight: 700;
@@ -139,11 +139,7 @@ section.workHolderSection.bodyContainer {
 
 
 @media (max-width: 1600px) and (min-width: 1200px){
-.workHolderSection .workContainer .workHolder .workHeading h2 {
-    font-size: 30px;
-}
 .workHolderSection .workContainer .workFilter li {
-    padding: 6px 15px;
     font-size: 12px;
 }
 section.workHolderSection.bodyContainer {

@@ -263,12 +263,6 @@ header.blog-header .social-share span {
     height: 36px !important;
     width: 36px !important;
 }
-header.blog-header .heading-content h1 {
-    font-size: 60px;
-}
-header.blog-header .heading-content h3 {
-    font-size: 30px;
-}
 .container-content {
     max-width: 75%;
 }
