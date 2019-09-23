@@ -30,7 +30,10 @@ section.about-holder .about-img {
 .about-content p {
     margin-top: 40px;
 }
-
+.about-content p span{
+    font-weight: 600;
+    color: #d1708d;
+}
 .about-content .social a {
     vertical-align: middle;
 }
