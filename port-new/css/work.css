@@ -23,7 +23,9 @@ section.workHolderSection.bodyContainer {
 .workHolderSection .workContainer .workFilter li:last-child {
     margin-right: 0px;
 }
-
+.workHolderSection .workContainer .workFilter li.active {
+    background-color:#4a4a4a;color: #fff;
+}
 
 .workHolder img {
     filter: grayscale(1);

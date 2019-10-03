@@ -18,7 +18,7 @@
           <li class="active-nav"><a href="work.html">Bits</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="Indrjit-Resume.pdf">Resume</a></li>
+          <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
         </ul>
 	    <span class="hamburger-box hamburger hamburger--squeeze"> <span class="hamburger-inner"></span></span>
       </header>
@@ -27,7 +27,7 @@
 	      <li><a href="work.html">Bits</a></li>
 	      <li><a href="blogs.html">Blogs</a></li>
 	      <li><a href="contact.html">Contact</a></li>
-	      <li><a href="Indrjit-Resume.pdf">Resume</a></li>
+	      <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
     </ul>
 
 <section class="workHolderSection bodyContainer">
@@ -36,20 +36,20 @@
 			<li data-filter="all">All</button>
 			<li data-filter=".design">Design</button>
             <li data-filter=".layout">layout</button>
-            <li data-filter=".plugin">Plugin</button>
+            <li data-filter=".plugin">API</button>
             <li data-filter=".css">CSS Features</button>
             <li data-filter=".canvas">Canvas</button>
 		</ul>
 		<div class="workHolder ">
 			<ul class="container">
-				<li class="mix design"><a href=""><img src="images/work/1.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix layout"><a href=""><img src="images/work/2.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix plugin"><a href=""><img src="images/work/3.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix plugin"><a href=""><img src="images/work/4.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix css"><a href=""><img src="images/work/5.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix css"><a href=""><img src="images/work/6.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix canvas"><a href=""><img src="images/work/7.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
-				<li class="mix layout"><a href=""><img src="images/work/8.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
+				<li class="mix design"><a href="https://indar.xyz/color-picker/" target="_blank"><img src="images/work/1.jpg" alt="" /><div class="workHeading"><h2>Color Picker</h2></div></a></li>
+				<li class="mix layout"><a href="https://indar.xyz/Overlay-Menu-Window-Width/" target="_blank"><img src="images/work/2.jpg" alt="" /><div class="workHeading"><h2>Overlay Menu</h2></div></a></li>
+				<li class="mix design"><a href="https://indar.xyz/font-testing/" target="_blank"><img src="images/work/3.jpg" alt="" /><div class="workHeading"><h2>Font Testing</h2></div></a></li>
+				<li class="mix design"><a href="https://indar.xyz/minimal-form/" target="_blank"><img src="images/work/4.jpg" alt="" /><div class="workHeading"><h2>Minimal Form</h2></div></a></li>
+				<li class="mix css"><a href="https://indar.xyz/horizontal-scroll/" target="_blank"><img src="images/work/5.jpg" alt="" /><div class="workHeading"><h2>Horizontal Scroll</h2></div></a></li>
+				<li class="mix css"><a href="https://indar.xyz/Hidden-Scroll/" target="_blank"><img src="images/work/6.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
+				<li class="mix canvas"><a href="https://indar.xyz/scribble-art/" target="_blank"><img src="images/work/7.jpg" alt="" /><div class="workHeading"><h2>Scribble Art</h2></div></a></li>
+				<li class="mix plugin"><a href="https://indar.xyz/github-finder/" target="_blank"><img src="images/work/8.jpg" alt="" /><div class="workHeading"><h2>Github Finder</h2></div></a></li>
 			</ul>
 		</div>
 		<h3>for more <a href="https://github.com/IndarCode" target="_blank">Visit my Github Profile</a></h3>
@@ -75,6 +75,10 @@
 </script>
 <script src="script/main.js"></script>
 <script type="text/javascript">
+	$('.workFilter li').click(function(){
+		$(this).parent().find('.active').removeClass("active")
+		$(this).addClass("active")
+	})
 	
 const winHeight = $(window).outerHeight();
 	const headerHeight = $('header').outerHeight();
