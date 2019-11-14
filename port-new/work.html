@@ -52,7 +52,7 @@
 				<li class="mix plugin"><a href="https://indar.xyz/github-finder/" target="_blank"><img src="images/work/8.jpg" alt="" /><div class="workHeading"><h2>Github Finder</h2></div></a></li>
 			</ul>
 		</div>
-		<h3>for more <a href="https://github.com/IndarCode" target="_blank">Visit my Github Profile</a></h3>
+		
 	</div>
 </section>
 
@@ -79,6 +79,12 @@
 		$(this).parent().find('.active').removeClass("active")
 		$(this).addClass("active")
 	})
+	function setGithubProfile(){
+		setTimeout(() => {
+			$('.workContainer').append("<h3>for more <a href='https://github.com/IndarCode' target='_blank'>Visit my Github Profile</a></h3>")
+		}, 1000)
+	}
+	setGithubProfile()
 	
 const winHeight = $(window).outerHeight();
 	const headerHeight = $('header').outerHeight();
