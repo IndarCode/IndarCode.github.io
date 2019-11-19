@@ -1,0 +1,257 @@
+
+.home header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 1% 0;
+}
+
+section.home .bodyContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main-img {
+    position: relative;
+    right: 0%;
+    width: 50vh;
+}
+
+.bodyContainer.action .main-img {
+    right: 0%;
+}
+.bodyContainer.action .main-img:after {
+    width: 0%;
+}
+.content {
+    position: relative;
+    left: 0%;
+    max-width: calc(100% - 385px - 100px);
+}
+.bodyContainer.action .content{
+    left: 0;
+}
+.home .social{
+    opacity: 0;
+}
+.content h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: arial;
+    line-height: 1em;
+}
+
+.content h1.one {
+    font-size: 2.5vw;
+    margin-bottom: 30px;
+    position: relative;
+    left: 6px;
+}
+.content h1.two {
+    font-size: 4.2vw;
+    letter-spacing: -6px;
+    line-height: 3vw;
+}
+.content h1.three {
+    font-size: 6.3vw;
+    letter-spacing: -8px;
+    line-height: 6.5vw;
+    position: relative;
+    left: -3px;
+}
+
+.content h1.one span {
+    font-weight: 900;
+    font-family: arial;
+    font-size: 2.5vw;
+}
+.content ul.nav li a:hover {
+    color: #d1708d;
+}
+.home header ul.nav{
+    display: none;
+}
+.content ul.nav {
+    margin-top: 80px;
+    position: relative;
+    left: -16px;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px){
+.content {
+    left: 0;
+}
+.home header {
+    background-color: transparent;
+    box-shadow: none;
+}
+.content h1.one {
+    margin-bottom: 25px;
+}
+section.home {
+    background-position: center;
+    background-size: cover;
+    animation: none;
+    background-image: url(../images/port-mobile.jpg);
+}
+section.home .bodyContainer {
+    justify-content: center;
+    flex-direction: column;
+}
+.main-img {
+    display: none;
+}
+.content ul.nav {
+    left: -20px;
+    margin-top: 50px;
+}
+.content {
+    width: 100%;
+}
+.content h1.one {
+    font-size: 25px;
+    left: 0px;
+}
+.content h1.one span {
+    font-size: 25px;
+}
+.content h1.two {
+    font-size: 35px;
+    letter-spacing: -3px;
+    line-height: 35px;
+}
+.content h1.three {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 55px;
+    left: -1px;
+    position: relative;
+}
+.social {
+    bottom: 5%;
+}
+img.quote {
+    width: 90%;
+    position: fixed;
+    bottom: 12%;
+}
+
+}
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1024px){
+section.home {
+    background-position: center;
+    background-size: cover;
+    animation: none;
+    background-image: url(../images/port-mobile.jpg);
+}
+section.home .bodyContainer {
+    justify-content: center;
+    flex-direction: column;
+}
+.main-img {
+    display: none;
+}
+.content ul.nav {
+    left: -20px;
+}
+.content {
+    width: 100%;
+}
+.content h1.one {
+    font-size: 40px;
+    left: 0px;
+}
+.content h1.one span {
+    font-size: 40px;
+}
+.content h1.two {
+    font-size: 62px;
+    letter-spacing: -3px;
+    line-height: 62px;
+}
+.content h1.three {
+    font-size: 90px;
+    letter-spacing: -5px;
+    line-height: 80px;
+    left: -1px;
+    position: relative;
+}
+.social {
+    bottom: 5%;
+}
+img.quote {
+    width: 70%;
+    position: fixed;
+    bottom: 11%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1200px) and (max-width: 1400px){
+
+.content h1.one {
+    font-size: 40px;
+    left: 6px;
+}
+.content h1.one span {
+    font-size: 40px;
+}
+.content h1.two {
+    font-size: 62px;
+    line-height: 62px;
+}
+.content h1.three {
+    font-size: 90px;
+    line-height: 70px;
+    position: relative;
+    left: -2px;
+}
+.content ul.nav {
+    margin-top: 60px;
+}
+img.quote {
+    width: 500px;
+    bottom: 105px;
+}
+.main-img {
+    height: 85vh;
+}
+.main-img img{
+    height: 100%;
+}
+
+
+}
+

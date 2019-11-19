@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>indarCode - MERN Stack Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+<body>
+<section class="in">
+      <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+        <ul class="nav vis-desk">
+          <li class="active-nav"><a href="about.html">About</a></li>
+          <li><a href="work.html">Bits</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+	    <span class="hamburger-box hamburger hamburger--squeeze"> <span class="hamburger-inner"></span></span>
+      </header>
+      <ul class="mob-nav vis-mob">
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="work.html">Bits</a></li>
+	      <li><a href="blogs.html">Blogs</a></li>
+	      <li><a href="contact.html">Contact</a></li>
+	      <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+
+<section class="about-holder bodyContainer">
+	<div class="about-img">
+		<img src="images/port2.jpg" alt="" />
+	</div>
+	<div class="about-content">
+			<h2>Hello there !!!</h2>
+			<p>I am Indar <a href="https://github.com/IndarCode" target="_blank"><span>@indarCode.</span></a><br>
+I code, Design write about techs, breathe music, watch movies, Box, and big time calisthenics fanatic.</p>
+
+<p>I was born with a very strong supernatural power of not being so genius, intelligent, or physically well shaped and that had made me a dreamer. Little did i know while growing up 
+that this small word is the sole foundation of all we see around us.
+This second parllel world of my mind has made me strive for all i have dreamnt and helped me to push my boundaries. sooner or later i have always got what i have dreamnt for me and that became fuel for path ahead.</p>
+
+<p>To share what i learn in the process I write blogs of my dev stack and try to help like minded.</p>
+<p>I believe in order to learn anything first you need to be curious about it and that will lead you to hell a lot of questions. that very moment you have won it around 90%, rest 10% will be how you find answers for all your question. </p>
+
+			<a href="Indrjit-Resume.pdf" target="_blank" class="resume-btn">DOWNLOAD RESUME</a>
+			
+			 <div class="social">
+			 	<h4>FOLLOW ME:</h4>
+		        <a href="" class="fb"></a>
+		        <a href="" class="in"></a>
+		        <a href="" class="gi"></a>
+		        <a href="" class="tw"></a>
+		        <a href="" class="wt"></a>
+		      </div>
+		</div>
+		
+	</div>
+</section>
+
+
+
+<footer>
+	 Copyright © 2018. All Rights Reserved.
+</footer>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	
+const winHeight = $(window).outerHeight();
+	const headerHeight = $('header').outerHeight();
+	const footerHeight = $('footer').outerHeight();
+	const screenHeight = winHeight - (headerHeight + footerHeight);
+	const bodyHeight = $('.bodyContainer').outerHeight();
+
+	if( screenHeight  > bodyHeight) {
+		$('footer').addClass('fixed');
+	}
+	else{
+
+	}
+</script>
+<script src="script/main.js"></script>
+</body>
+</html>

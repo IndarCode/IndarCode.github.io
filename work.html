@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Indar - MERN Stack Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/work.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+<section class="in">
+      <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+        <ul class="nav vis-desk">
+          <li><a href="about.html">About</a></li>
+          <li class="active-nav"><a href="work.html">Bits</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+	    <span class="hamburger-box hamburger hamburger--squeeze"> <span class="hamburger-inner"></span></span>
+      </header>
+      <ul class="mob-nav vis-mob">
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="work.html">Bits</a></li>
+	      <li><a href="blogs.html">Blogs</a></li>
+	      <li><a href="contact.html">Contact</a></li>
+	      <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+
+<section class="workHolderSection bodyContainer">
+	<div class="workContainer">
+		<ul class="workFilter">
+			<li data-filter="all">All</button>
+			<li data-filter=".design">Design</button>
+            <li data-filter=".layout">layout</button>
+            <li data-filter=".plugin">API</button>
+            <li data-filter=".css">CSS Features</button>
+            <li data-filter=".canvas">Canvas</button>
+		</ul>
+		<div class="workHolder ">
+			<ul class="container">
+				<li class="mix design"><a href="https://indar.xyz/color-picker/" target="_blank"><img src="images/work/1.jpg" alt="" /><div class="workHeading"><h2>Color Picker</h2></div></a></li>
+				<li class="mix layout"><a href="https://indar.xyz/Overlay-Menu-Window-Width/" target="_blank"><img src="images/work/2.jpg" alt="" /><div class="workHeading"><h2>Overlay Menu</h2></div></a></li>
+				<li class="mix design"><a href="https://indar.xyz/font-testing/" target="_blank"><img src="images/work/3.jpg" alt="" /><div class="workHeading"><h2>Font Testing</h2></div></a></li>
+				<li class="mix design"><a href="https://indar.xyz/minimal-form/" target="_blank"><img src="images/work/4.jpg" alt="" /><div class="workHeading"><h2>Minimal Form</h2></div></a></li>
+				<li class="mix css"><a href="https://indar.xyz/horizontal-scroll/" target="_blank"><img src="images/work/5.jpg" alt="" /><div class="workHeading"><h2>Horizontal Scroll</h2></div></a></li>
+				<li class="mix css"><a href="https://indar.xyz/Hidden-Scroll/" target="_blank"><img src="images/work/6.jpg" alt="" /><div class="workHeading"><h2>Hidden Scroll</h2></div></a></li>
+				<li class="mix canvas"><a href="https://indar.xyz/scribble-art/" target="_blank"><img src="images/work/7.jpg" alt="" /><div class="workHeading"><h2>Scribble Art</h2></div></a></li>
+				<li class="mix plugin"><a href="https://indar.xyz/github-finder/" target="_blank"><img src="images/work/8.jpg" alt="" /><div class="workHeading"><h2>Github Finder</h2></div></a></li>
+			</ul>
+		</div>
+		
+	</div>
+</section>
+
+
+
+<footer>
+	 Copyright © 2018. All Rights Reserved.
+</footer>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="mixitup.min.js"></script>
+<script>
+    var containerEl = document.querySelector('.container');
+    var mixer = mixitup(containerEl);
+    $('.workHolder').css('height', $('.workHolder').outerHeight());
+    
+</script>
+<script src="script/main.js"></script>
+<script type="text/javascript">
+	$('.workFilter li').click(function(){
+		$(this).parent().find('.active').removeClass("active")
+		$(this).addClass("active")
+	})
+	function setGithubProfile(){
+		setTimeout(() => {
+			$('.workContainer').append("<h3>for more <a href='https://github.com/IndarCode' target='_blank'>Visit my Github Profile</a></h3>")
+		}, 1000)
+	}
+	setGithubProfile()
+	
+const winHeight = $(window).outerHeight();
+	const headerHeight = $('header').outerHeight();
+	const footerHeight = $('footer').outerHeight();
+	const screenHeight = winHeight - (headerHeight + footerHeight);
+	const bodyHeight = $('.bodyContainer').outerHeight();
+
+	if( screenHeight  > bodyHeight) {
+		$('footer').addClass('fixed');
+	}
+	
+</script>
+</body>
+</html>
