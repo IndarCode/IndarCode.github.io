@@ -85,7 +85,15 @@ button.blankButton {
     margin-right: 10px;
 }
 
-
+.meta-info{
+    margin-top: 50px;
+    font-size: 14px;
+}
+.meta-info a{
+    color: #d1708d;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 
 
