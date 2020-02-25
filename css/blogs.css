@@ -1,3 +1,44 @@
+
+/*filters */
+.placeholder{
+    text-align: center;
+    min-height: 60vh;
+    padding-top: 30vh;
+}
+.filter {
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+div#block {
+    padding: 7px 10px;
+    background-color: #000;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+}
+ul.filter-nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: rgba(241, 158, 183, 0.2);
+    font-size: 14px;
+}
+ul.filter-nav {
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul.filter-nav.show{
+    left: 57px;
+}
+
 .blogs-holder{
     margin-top: 12vh;
     margin-bottom: 20vh;

@@ -37,10 +37,25 @@
 
       <section class="blogs-holder">
         <div class="filter">
-
+          <div id="block">
+              Filter
+            </div>
+            <ul class="filter-nav">
+              <li data-value="all">All</li>
+              <li data-value="Type1">Type1</li>
+              <li data-value="Type2">Type2</li>
+              <li data-value="Type3">Type3</li>
+              <li data-value="Type4">Type4</li>
+              <li data-value="Type5">Type5</li>
+              <li data-value="Type6">Type6</li>
+            </ul>
         </div>
 
-        <div class="container">
+<div class="placeholder"> 
+  <h1>This page is under maintenance.</h1>
+  <h3>Stay tuned...it will be back before you could say 'JavaScript' :)</h3>
+</div>
+        <div class="container" style="display: none">
           
           <div class="row left">
             <a href="blogs/blog-inner.html" >
@@ -162,6 +177,24 @@
     }).scroll();  //
     </script>
     <script src="script/main.js"></script>
+    <script>
+$(document).ready(function(){
+  $(".filter-nav li").click(function(e){
+    const dataValue = $(this).attr('data-value')
+    $('#panel div').show();
+    if(dataValue === 'all'){
+    $('#panel div').show();
+  } else {
+    $('#panel').find(`[data-tag!='${dataValue}']`).hide()
+  }
+     $(".filter-nav li").css({'background-color': 'rgba(241, 158, 183, 0.2)'});
+     $(this).css({'background-color': '#d1708d'});
+  });
+  $('#block').click(() => {
+    $('.filter-nav').toggleClass('show')
+  })
+});
+</script>
 
   </body>
 </html>
