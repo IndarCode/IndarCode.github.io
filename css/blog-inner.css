@@ -2,6 +2,7 @@
     float: left;
     height: 2vw !important;
     width: 2vw !important;
+    color: #fff !important;
 }
 .blog-inner > header.shadow{
     box-shadow: 0px 0px 6px rgb(8, 8, 8, 0.35);
@@ -37,7 +38,7 @@ header.blog-header .social-share span {
     font-size: 0.9vw;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #fff;
+    color: #d23669;
 }
 header.blog-header .social-share * {
     display: inline-block;
@@ -145,9 +146,8 @@ header.blog-header .heading-content h3 {
 }
 header.blog-header .social-share span {
     font-size: 15px;
-    color: #d23669;
 }
-.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg { 
+.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
     float: left;
     height: 25px !important;
     width: 25px !important;
