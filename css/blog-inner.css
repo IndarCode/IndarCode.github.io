@@ -3,15 +3,12 @@
     height: 2vw !important;
     width: 2vw !important;
 }
-section.in.blog-inner > header{
-    background-color: #d0708d;
-}
 .blog-inner > header.shadow{
     box-shadow: 0px 0px 6px rgb(8, 8, 8, 0.35);
 }
 section.blog-holder header.blog-header {
     min-height: 38vh;
-    background-color: #d0708d;
+    background-color: #2d2d2d;
     display: flex;
     align-items: flex-end;
     padding-bottom: 3%;
@@ -28,6 +25,7 @@ header.blog-header .heading-content h1 {
     font-size: 3vw;
     font-weight: 800;
     letter-spacing: -2px;
+    color: #d23669;
 }
 header.blog-header .heading-content h3 {
     color: #fff;
@@ -39,6 +37,7 @@ header.blog-header .social-share span {
     font-size: 0.9vw;
     font-weight: 800;
     letter-spacing: 1px;
+    color: #fff;
 }
 header.blog-header .social-share * {
     display: inline-block;
@@ -65,7 +64,7 @@ header.blog-header .social-share * {
 .container-content h2 span{
     font-size: 1.7vw;
     display: inline-block;
-    color: #d0708d;
+    color: #d23669;
     font-weight: 800
 }
 .container-content p span {

@@ -52,6 +52,7 @@ section.home .bodyContainer {
     margin-bottom: 30px;
     position: relative;
     left: 6px;
+    letter-spacing: -1px;
 }
 .content h1.two {
     font-size: 4.2vw;
@@ -72,7 +73,7 @@ section.home .bodyContainer {
     font-size: 2.5vw;
 }
 .content ul.nav li a:hover {
-    color: #d1708d;
+    color: #d23669;
 }
 .home header ul.nav{
     display: none;

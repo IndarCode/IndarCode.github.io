@@ -56,10 +56,10 @@ div#disqus_thread {
 /*color css*/
 
 .main-color{
-	color: #d1708d;
+	color: #d23669;
 }
 .bg-main-color{
-	background-color: #d1708d;
+	background-color: #d23669;
 }
 
 
@@ -90,6 +90,7 @@ ul.nav li {
 }
 ul.nav li.active-nav a {
     font-weight: 900;
+    color: #d23669;
 }
 ul.nav li a {
     text-transform: uppercase;
