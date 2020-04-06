@@ -147,7 +147,7 @@ header.blog-header .social-share span {
     font-size: 15px;
     color: #d23669;
 }
-.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg {
+.at-resp-share-element .at-share-btn .at-icon-wrapper, .at-resp-share-element .at-share-btn .at-icon-wrapper svg { 
     float: left;
     height: 25px !important;
     width: 25px !important;
