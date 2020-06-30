@@ -44,6 +44,31 @@ section.home {
 	<img src="Untitled-1.jpg" alt="" />
 </section>
 
+	<script>
+		window.fetch('https://plus.dnb.com/v2/token', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic QVRwbmJVR2JXSE13SUwyY1NYZnNGOFJHWjFyMmNRUVA6QUNuZ2xuaXhHNWpZWGtNeQ=='
+          },
+          body: JSON.stringify({ grant_type : 'client_credentials' })
+        }).then(function(response) {
+          return response.json();
+        }).then(token => { 
+          console.log(token.access_token, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+          window.fetch('https://plus.dnb.com/v1/search/companyList', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer' + token.access_token,
+          },
+          body: JSON.stringify({searchTerm : 'walmart'})
+        })
+      }
+      )
+	</script>
 
 
 </body>
