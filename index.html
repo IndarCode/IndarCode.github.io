@@ -1,15 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" href="fav.png"/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="fav.png" />
     <!--CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
 
     <title>Indar - Front End Developer</title>
   </head>
@@ -17,49 +22,60 @@
     <!-- <div id="preloader"><div class="inner"><h1>Hello!</h1><img src="images/quotes.png" alt="" class="quote" /></div></div> -->
     <section class="home">
       <header>
-        <a href="index.html" class="logo"><img src="images/logo.png" alt="@indarCode logo" /></a>
-
-        <ul class="nav">
+        <a href="index.html" class="logo"
+          ><img src="images/logo.png" alt="@indarCode logo"
+        /></a>
+        <!-- <ul class="nav">
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Bits</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+        </ul> -->
+        <span class="hamburger-box hamburger hamburger--squeeze">
+          <span class="hamburger-inner"></span
+        ></span>
       </header>
+      <ul class="mob-nav vis-mob">
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Bits</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Indrjit-Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
       <div class="bodyContainer">
-      <div class="content">
-        <h1 class="one">I’m <span class="main-color">Indar</span></h1>
-        <h1 class="two">Front-End</h1>
-        <h1 class="three">Developer</h1>
+        <div class="content">
+          <h1 class="one">I’m <span class="main-color">Indar</span></h1>
+          <h1 class="two">Front-End</h1>
+          <h1 class="three">Developer</h1>
 
-        <ul class="nav">
-          <li><a href="blogs.html">BLOGS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-        <!-- <img src="images/quotes.png" alt="" class="quote" /> -->
-      </div>
+          <ul class="nav">
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <!-- <img src="images/quotes.png" alt="" class="quote" /> -->
+        </div>
 
-      <div class="main-img">
-        <img src="about.jpg" alt="@indarCode" title="@indarCode" />
-      </div>
-      
-      <div class="social">
-        <a href="" class="fb"></a>
-        <a href="" class="in"></a>
-        <a href="" class="gi"></a>
-        <a href="" class="tw"></a>
-        <a href="" class="wt"></a>
-      </div>
-    </div>
+        <div class="main-img">
+          <img src="about.jpg" alt="@indarCode" title="@indarCode" />
+        </div>
 
+        <div class="social">
+          <a href="" class="fb"></a>
+          <a href="" class="in"></a>
+          <a href="" class="gi"></a>
+          <a href="" class="tw"></a>
+          <a href="" class="wt"></a>
+        </div>
+      </div>
     </section>
-
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+      $("ul.isActive").prev().css("box-shadow", "0px -3px 7px #666");
+    </script>
   </body>
 </html>
