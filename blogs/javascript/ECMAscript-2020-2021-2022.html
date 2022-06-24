@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JavaScript Upgrades post 2015: ES7 | ES8 | ES9 | ES10</title>
+    <meta name="robots" content="FOLLOW,INDEX" />
+    <meta name="description" content="Automate your lease operations with Odessa's lease administration software. Let LeaseWave be your competitive advantage for asset and vehicle lease management." />
+    <link rel="canonical" href="https://indar.xyz/port-new/blogs/blog-inner.html" /><!-- Canonical tag of the page-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/blog-inner.css" />
+    <link rel="stylesheet" href="../../css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <section class="in blog-inner">
+      <header>
+        <a href="../index.html" class="logo"><img src="../../images/logo.png" alt="" /></a>
+         <span class="hamburger-box hamburger hamburger--squeeze"> <span class="hamburger-inner"></span></span>
+        <ul class="nav vis-desk">
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../work.html">Bits</a></li>
+          <li class="active-nav"><a href="../../blogs.html">Blogs</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../Indrjit-Resume.pdf">Resume</a></li>
+        </ul>
+      </header>
+      <ul class="mob-nav vis-mob">
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../work.html">Bits</a></li>
+          <li><a href="../../blogs.html">Blogs</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../Indrjit-Resume.pdf">Resume</a></li>
+      </ul>
+
+
+      <section class="blog-holder">
+
+        <header class="blog-header">
+          <div class="header-container">
+            <div class="heading-content">
+              <h1>JavaScript (ES11 | ES12 | ES13) </h1>
+              <h3>This article will walk you through 'Javascript' upgrades post ES10. (Part-2)</h3>
+            </div>
+            <div class="social-share">
+              <span>SHARE: </span> <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+            </div>
+          </div>
+        </header>
+        <section>
+          <div class="container-content">
+            <p>If JavaScript is part of your dev stack or you have people around working with JavaScript, you would know how powerful and popular JavaScript has become since the release of ES6.
+ES6 was the biggest release of all time in JS history and a much-needed facelift JavaScript needed to come back to the game. 
+After pushing these many upgrades in one shot, TC39 (Unit of ECMA international which takes care of standards of JavaScript) has decided to push a version out every single year, so it doesn’t become too heavy on developers to get aligned with it.
+So, all releases have come in subsequent years after that and not to mention they were very small releases compared to ES6.</p>
+<p>ES6-ES10 have been covered in part-1 of this series. We will see what we have got in ES11, ES12 and ES13 in this article.
+</p>
+
+            <h2>ES11<span>(2020)</span></h2>
+
+            <ul>
+              <li>
+                <h3>String.prototype.matchAll</h3>
+                <p>The matchAll() method returns an iterator of results after matching a string against a regular expression.</p>
+                <pre>
+<code class="language-js">
+// string definition
+const sentence = "JavaScript1JavaScript2";
+
+// a pattern having 'JavaScript' followed by a digit
+const regex = /JavaScript\d/g;
+
+// finding matches in the string for the given regular expression
+let results = sentence.matchAll(regex);
+
+// looping through the iterator
+for (result of results) {
+  console.log(result);
+}
+
+// Output:
+// ["JavaScript1", index: 0, input: "JavaScript1JavaScript2", groups: undefined]
+// ["JavaScript2", index: 11, input: "JavaScript1JavaScript2", groups: undefined]
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Dynamic Import</h3>
+                <p>The includes() method determines whether an array includes a certain value among its entries, returning true or false.</p>
+<pre>
+<code class="language-js">
+[1,2,3,4].includes(2) // true
+["q", "w", "e", "r", "t", "y"].includes("John") // false
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>BigInt</h3>
+                <p>A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending n to the end of an integer literal, or by calling the BigInt() function (without the new operator) and giving it an integer value or string value.</p>
+                <pre>
+<code class="language-js">
+const alsoHuge = BigInt(9007199254740991) // 9007199254740991n
+const hugeString = BigInt("9007199254740991") // 9007199254740991n
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Promise.allSettled</h3>
+                <p>The Promise.allSettled() method returns a promise that resolves after all of the given promises have either fulfilled or rejected, with an array of objects that each describes the outcome of each promise.</p>
+                <p>It is typically used when you have multiple asynchronous tasks that are not dependent on one another to complete successfully, or you'd always like to know the result of each promise.</p>
+
+<p>In comparison, the Promise returned by Promise.all() may be more appropriate if the tasks are dependent on each other / if you'd like to immediately reject upon any of them rejecting.</p>
+<pre>
+<code class="language-js">
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((resolve, reject) => setTimeout(reject, 100, 'foo'));
+const promises = [promise1, promise2];
+
+Promise.allSettled(promises).
+  then((results) => results.forEach((result) => console.log(result.status)));
+
+// expected output:
+// "fulfilled"
+// "rejected"
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>Optional Chaining</h3>
+                <p>The optional chaining operator (?.) enables you to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid. This is really handy when you are interested in value of a property deep down in an object.</p>
+                <p>The ?. operator is like the . chaining operator, except that instead of causing an error if a reference is nullish (null or undefined), the expression returns value of undefined.</p>
+<pre>
+<code class="language-js">
+const person = {
+  name: 'Alice',
+  cat: {
+    name: 'Dinah'
+  }
+};
+
+const dogName = person.dog?.name;
+console.log(dogName); // undefined
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>globalThis</h3>
+                <p>The global globalThis property contains the global this value, which is akin to the global object.</p>
+                <pre>
+<code class="language-js">
+console.log(globalThis.screenLeft); // 0
+console.log(globalThis.screenRight); // 0
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Nullish coalescing Operator</h3>
+                <p>The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is Nullish(null or undefined), and otherwise returns its left-hand side operand.</p>
+<pre>
+<code class="language-js">
+"" ?? "Hi" // ""
+[] ?? "Hi" // "[]"
+false ?? "Hi" // "false"
+
+null ?? "Hi" // "Hi" 
+undefined ?? "Hi" // "Hi"
+</code>
+</pre>
+
+              </li>
+            </ul>
+            <h2>ES12<span>(2021)</span></h2>
+
+            <ul>
+              <li>
+                <h3>String.prototype.replaceAll</h3>
+                <p>The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match.</p>
+                <pre>
+<code class="language-js">
+const str = 'John is a bogeyman.';
+console.log(p.replaceAll('John', 'Ritik')); // "Ritik is a bogeyman."
+
+
+// global flag required when calling replaceAll with regex
+const regex = /John/ig;
+console.log(p.replaceAll(regex, 'Ritik')); // "Ritik is a bogeyman."
+
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Promise.any</h3>
+                <p>Promise.any() takes an iterable of Promise objects. It returns a single promise that resolves as soon as any of the promises fulfills, with the value of the fulfilled promise. 
+                  </p>
+                  <p>
+                If no promises fulfill (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError.</p>
+<pre>
+<code class="language-js">
+const promise1 = Promise.reject(0);
+const promise2 = new Promise((resolve) => setTimeout(resolve, 100, 'quick'));
+const promise3 = new Promise((resolve) => setTimeout(resolve, 500, 'slow'));
+
+const promises = [promise1, promise2, promise3];
+
+Promise.any(promises).then((value) => console.log(value)); // "quick"
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>Logical Assignment Operators</h3>
+                <p>The logical OR assignment (x ||= y) operator only assigns if x is falsy.</p>
+                <pre>
+<code class="language-js">
+const a = { duration: 50, title: '' };
+
+a.duration ||= 10;
+console.log(a.duration);
+// expected output: 50
+
+a.title ||= 'title is empty.';
+console.log(a.title);
+// expected output: "title is empty"
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Numeric separators</h3>
+                <p>Large numeric literals are difficult for the human eye to parse quickly, especially when there are lots of repeating digits:</p>
+<pre>
+<code class="language-js">
+1000000000000
+1019436871.42
+</code>
+</pre>
+<p>To improve readability, JS enables underscores as separators in numeric literals. So, the above can now be rewritten to group the digits per thousand, for example:</p>
+<pre>
+<code class="language-js">
+1_000_000_000_000
+1_019_436_871.42
+</code>
+</pre>
+              </li>
+             
+            <h2>ES13<span>(2022)</span></h2>
+
+            <ul>
+              <li>
+                <h3>Class Fields</h3>
+                <p>Public static fields are useful when you want a field to exist only once per class, not on every class instance you create. Public static fields are declared using the static keyword. They are added to the class constructor at the time of class evaluation</p>
+                <pre>
+<code class="language-js">
+class ClassWithStaticField {
+  static staticField = 'static field'
+}
+
+console.log(ClassWithStaticField.staticField)
+// expected output: "static field"
+</code>
+</pre>
+<h4>Public instance fields</h4>
+<p>Public instance fields exist on every created instance of a class. By declaring a public field, you can ensure the field is always present</p>
+<p>Public instance fields are added with Object.defineProperty() either at construction time in the base class (before the constructor body runs), or just after super() returns in a subclass.</p>
+                <pre>
+<code class="language-js">
+class ClassWithInstanceField {
+  instanceField = 'instance field'
+}
+
+const instance = new ClassWithInstanceField()
+console.log(instance.instanceField)
+// expected output: "instance field"
+</code>
+</pre>
+<h4>Public static methods</h4>
+<p>The static keyword defines a static method for a class. Static methods aren't called on instances of the class. Instead, they're called on the class itself. These are often utility functions, such as functions to create or clone objects.</p>
+                <pre>
+<code class="language-js">
+class ClassWithStaticMethod {
+  static staticMethod() {
+    return 'static method has been called.';
+  }
+}
+
+console.log(ClassWithStaticMethod.staticMethod());
+// expected output: "static method has been called."
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Top-level await</h3>
+                <p>Top-level await’ which is promoted to Stage 4 in the TC39 process lets us use the asynchronous await operator at the top level of modules. Top-level await enables modules to act as big async functions.</p>
+<pre>
+<code class="language-js">
+// fetch request
+const colors = fetch('../data/colors.json')
+  .then(response => response.json());
+
+export default await colors;
+
+// a simple module using the Fetch API and specifying await within the export statement. Any modules that include this will wait for the fetch to resolve before running any code.
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>.at()</h3>
+                <p>The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.</p>
+                <pre>
+<code class="language-js">
+const arr = [1,2,3,4,5]
+console.log(arr.at(1)) // 2
+console.log(arr.at(-1)) // will give you last item of the array.// 5
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Object.prototype.hasOwn</h3>
+                <p>The Object.hasOwn() method returns true if the specified property is a direct property of the object — even if the property value is null or undefined. The method returns false if the property is inherited, or has not been declared at all.</p>
+                <p>It is recommended over Object.hasOwnProperty() because it works for objects created using Object.create(null) and with objects that have overridden the inherited hasOwnProperty() method. While it is possible to workaround these problems by calling Object.prototype.hasOwnProperty() on an external object, Object.hasOwn() is more intuitive.</p>
+<pre>
+<code class="language-js">
+Const obj = {name: "John", lastName: "Wick"}
+console.log(obj.hasOwnProperty('name')) // true
+console.log(Object.hasOwn(obj, 'name')) // true
+</code>
+</pre>
+
+              </li>
+              <li>
+                <h3>Class Static Block</h3>
+                <p>Class static initialization blocks are a special feature of a class that enable more flexible initialization of static properties than can be achieved using per-field initialization.</p>
+                <pre>
+<code class="language-js">
+class Construct {
+  static staticProperty1 = 'Property 1';
+  static staticProperty2;
+  static {
+    this.staticProperty2 = 'Property 2';
+  }
+}
+
+console.log(Construct.staticProperty1); // output: "Property 1"
+console.log(Construct.staticProperty2); // output: "Property 2"
+</code>
+</pre>
+              </li>
+              <li>
+                <h3>Error Cause</h3>
+                <p>Error and it's subclasses now let us specify the reason behind the error. This is useful in deeply nested function where we have chained error blocks to quickly find the error.</p>
+<pre>
+<code class="language-js">
+try {
+    frameworkThatCanThrow();
+  } catch (err) {
+    throw new Error('New error message', { cause: err });
+  }
+</code>
+</pre>
+
+              </li>
+              
+            </ul>
+          </div>
+          <div class="series-block">
+            <h6><strong>Series:</strong> JS Upgrades</h6>
+            <h2>JavaScript (ES7 | ES8 | ES9 | ES10) </h1>
+            <h4>This article will walk you through 'Javascript' upgrades post ES6. (Part-1)</h3>
+              <a href="ECMAscript-2016-2017-2018-2019.html">Read More</a>
+          </div>
+          <!-- <div class="related-blogs-holder">
+            <h2>Quisque ultrices augue quis lectus tincidunt pretium. </h2>
+            <ul>
+              <li><a href=""><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. </a></li>
+              <li><a href=""><strong>Pellentesque.</strong> Ut sed vehicula augue. Praesent cursus efficitur est eu luctus.  </a></li>
+              <li><a href=""><strong>Vestibulum pellentesque</strong> tempus odio ac congue. </a></li>
+              <li><a href=""><strong>Class aptent taciti sociosqu ad litora torquent</strong> per conubia nostra, per inceptos himenaeos. </a></li>
+              <li><a href=""><strong>Nam egestas posuere</strong> lorem in scelerisque. Integer at ante ex. </a></li>
+              <li><a href=""><strong>Etiam tempus</strong> mi in mi sagittis, non consequat velit accumsan. </a></li>
+            </ul>
+          </div> -->
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        // (function() { // DON'T EDIT BELOW THIS LINE
+        // var d = document, s = d.createElement('script');
+        // s.src = 'https://indrjit.disqus.com/embed.js';
+        // s.setAttribute('data-timestamp', +new Date());
+        // (d.head || d.body).appendChild(s);
+        // })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+      </section>
+      <footer>
+        Copyright © <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../script/prism.js"></script>
+    <script>
+      $(window).on('scroll', function () {
+        $('.blog-inner > header').toggleClass('shadow', $(document).scrollTop() > 20);
+    }).scroll();  //
+    </script>
+
+    <script src="../script/main.js"></script>
+    <script src="../prism.js"></script>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+   <!--  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baf5e219b1c14ce"></script> -->
+
+  </body>
+</html>
