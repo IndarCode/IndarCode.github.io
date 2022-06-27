@@ -22,7 +22,7 @@
 
     <section class="in blog-inner">
       <header>
-        <a href="../index.html" class="logo"><img src="../../images/logo.png" alt="" /></a>
+        <a href="../../index.html" class="logo"><img src="../../images/logo.png" alt="" /></a>
          <span class="hamburger-box hamburger hamburger--squeeze"> <span class="hamburger-inner"></span></span>
         <ul class="nav vis-desk">
           <li><a href="../../about.html">About</a></li>
@@ -47,7 +47,7 @@
           <div class="header-container">
             <div class="heading-content">
               <h1>JavaScript Evolution </h1>
-              <h3>History of JS in asynchronus: Callbacks, Promises and Async await.</h3>
+              <h3>History of JS in asynchronus world: Callbacks, Promises and Async await.</h3>
             </div>
             <div class="social-share">
               <span>SHARE: </span> <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
@@ -56,45 +56,265 @@
         </header>
         <section>
           <div class="container-content">
-            <p>If JavaScript is part of your dev stack or you have people around working with JavaScript, you would know how powerful and popular JavaScript has become since the release of ES6.
-ES6 was the biggest release of all time in JS history and a much-needed facelift JavaScript needed to come back to the game. 
-After pushing these many upgrades in one shot, TC39 (Unit of ECMA international which takes care of standards of JavaScript) has decided to push a version out every single year, so it doesn’t become too heavy on developers to get aligned with it.
-So, all releases have come in subsequent years after that and not to mention they were very small releases compared to ES6.</p>
-<p>Let’s see what are those upgrades.
+            <p>Let’s say you have a function that will print a string after a random amount of time:</p>
+ <pre>
+              <code class="language-js">
+function writeText(string){
+  setTimeout(
+    () => {
+      console.log(string)
+    }, 
+    Math.floor(Math.random() * 100) + 1
+  )
+}
+</code>
+            </pre>
+<p>Let’s try to print the letters A, B, C in that order:</p>
+
+ <pre>
+    <code class="language-js">
+function writeAllText(){
+  writeText("A")
+  writeText("B")
+  writeText("C")
+}
+writeAllText()
+   </code>
+            </pre>
+<p>You will notice that A, B, and C print in a different and random order each time you call writeAllText!
+This is because these functions are asynchronous. Each function gets executed in order, but each one is independent with it’s own setTimeout. They won’t wait for the last function to finish before they start.
+This is super annoying, so let’s fix it with a callback.</p>
+
+
+            <h2>Callbacks<span> (Old school...)</span></h2>
+
+            <p>A callback is a function that is passed to another function. When the first function is done, it will run the second function</p>
+             <pre>
+    <code class="language-js">
+function writeText(string, callback){
+  setTimeout(
+    () => {
+      console.log(string)
+      callback()
+    }, 
+    Math.floor(Math.random() * 100) + 1
+  )
+}
+</code>
+            </pre>
+
+             <p>You can see that is is super easy to modify the original function to work with callbacks. <br><br>Again, let’s try to print the letters A, B, C in that order:</p>
+
+             <pre>
+              <code class="language-js">
+function writeAllText(){
+  writeText("A", () => {
+    writeText("B", () => {
+      writeText("C", () => {})
+    })
+  })
+}
+writeAllText()
+              </code>
+            </pre>
+
+
+             <p>Well, the code is a lot uglier now, but at least it works! Each time you call writeAllText, you get the same result.<br><br>
+The problem with callbacks is it creates something called “Callback Hell.” Basically, you start nesting functions within functions within functions, and it starts to get really hard to read the code.
+</p>
+<h2>Promises <span>(Cooool...)</span></h2>
+<p>Promises try to fix this nesting problem. Let’s change our function to use Promises</p>
+
+<pre>
+  <code class="language-js">
+function writeText(string){
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      () => {
+       console.log(string)
+       resolve()
+      }, 
+     Math.floor(Math.random() * 100) + 1
+    )
+  })
+
+  </code>
+</pre>
+<p>You can see that it still looks pretty similar. You wrap the whole function in a Promise, and instead of calling the callback, you call resolve (or reject if there is an error). The function returns this Promise object.<br><br>
+Again, let’s try to print the letters A, B, C in that order:
+</p>
+<pre>
+  <code class="language-js">
+function writeAllText(){
+  writeText("A")
+  .then(() => {
+    return writeText("B")
+  })
+  .then(() => {
+    return writeText("C")
+  })
+}
+writeAllText()
+ </code>
+</pre>
+<p>This is called a Promise Chain. You can see that the code returns the result of the function (which will be a Promise), and this gets sent to the next function in the chain.<br><br>
+The code is no longer nested but it still looks messy!<br><br>
+By using features of arrow functions, we can remove the “wrapper” function. The code becomes cleaner, but still has a lot of unnecessary parenthesis:
+</p>
+<pre>
+  <code class="language-js">
+function writeAllText(){
+  writeText("A")
+  .then(() => writeText("B"))
+  .then(() => writeText("C"))
+}
+writeAllText()
+ </code>
+</pre>
+<h2>Async|await<span>(Stylish...)</span></h2>
+<p>Await is basically syntactic sugar for Promises. It makes your asynchronous code look more like synchronous/procedural code, which is easier for humans to understand.<br><br>
+The writeText function doesn’t change at all from the promise version.<br><br>
+Again, let’s try to print the letters A, B, C in that order:
 </p>
 
-            <h2>ES11<span>(2020)</span></h2>
-
-            <p>Donec molestie vel augue vitae faucibus. Nunc eu ipsum sem. Ut viverra eget lacus luctus posuere. Nunc elementum ipsum fermentum sagittis egestas. <span class="highlight">Duis efficitur turpis ut leo condimentum, in eleifend libero ullamcorper. Vivamus id ullamcorper nisi. Proin sed rhoncus ante. Quisque leo tortor, vehicula quis urna congue, molestie ultrices odio. Cras interdum quam non consectetur semper.</span> Duis urna magna, efficitur at lectus nec, tristique pharetra orci. Mauris tincidunt tincidunt massa, at consectetur lacus ultrices eget. Praesent mollis odio vel mi convallis ultricies.</p>
-
-             <h2>Quisque ultrices <span>augue quis lectus</span> tincidunt pretium. </h2>
-             <p>Quisque ultrices augue quis lectus tincidunt pretium. Quisque eu semper ex. Phasellus non neque magna. Donec accumsan, nunc vel dapibus interdum, libero nisi pellentesque nisi, in venenatis purus lectus luctus arcu. Aenean eget turpis sit amet dui suscipit tempor at ut nisi. Sed placerat nisi et ligula suscipit, sit amet tincidunt odio sodales. Nam quis laoreet ipsum.</p>
-
-             <pre><code class="language-js">$ npm install prismjs</code></pre>
-
-
-             <p>Suspendisse malesuada nisl a ullamcorper interdum. Nullam elementum ante nisi, id aliquet velit viverra ut. Pellentesque elit ex, cursus in risus sed, gravida gravida arcu. Donec nec tellus orci. Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. Proin purus purus, ullamcorper sed tristique eget, interdum ut metus.</p>
-
-            <pre><code class="language-js">import Prism from 'prismjs';</code></pre>
-
-             <main>
-              <p>Nunc vitae mauris et tellus consectetur iaculis. In consequat ante ac tellus lacinia, ac tempus eros aliquet. Suspendisse vel velit erat. </p>
-             </main>
-
-             <p>Maecenas egestas massa ac ante ornare vulputate. Vivamus id nibh et tortor euismod egestas vel ut nisi. In eleifend est eu nunc tempor, suscipit mattis ex euismod. Phasellus lorem justo, rutrum in lorem ac, sodales vestibulum odio. Quisque scelerisque cursus tincidunt. Aliquam condimentum varius lorem nec sodales. In tempor feugiat ultricies. Sed tempus eleifend malesuada. Maecenas mollis diam id egestas pulvinar. Suspendisse nec pulvinar felis. Donec vel purus sed urna volutpat placerat.</p>
 <pre>
-<code class="language-js">
-var Prism = require('prismjs');
-var loadLanguages = require('prismjs/components/');
-loadLanguages(['haml']);
-
-// The code snippet you want to highlight, as a string
-var code = "= ['hi', 'there', 'reader!'].join \" \"";
-
-// Returns a highlighted HTML string
-var html = Prism.highlight(code, Prism.languages.haml, 'haml');
-</code>
+  <code class="language-js">
+async function writeAllText(){
+  await writeText("A")
+  await writeText("B")
+  await writeText("C")
+}
+writeAllText()
+  </code>
 </pre>
+<p>Yeah…. MUCH better!<br><br> You might notice that we use the “async” keyword for the wrapper function writeAllText. This let’s JavaScript know that we are using async/await syntax, and is necessary if you want to use Await. This means you can’t use Await at the global level; it always needs a wrapper function. Most JavaScript code runs inside a function, so this isn’t a big deal.</p>
+
+<h2>But Wait !!! There is more...</h2>
+<p>The writeText function doesn’t return anything and is independent, all we cared about was the order. But what if you wanted to take the output of the first function, do something with it in the second function, and then pass it to the third function?</p>
+<p>Instead of printing the string each time, let’s make a function that will concatenate the string and pass it on.</p>
+<h4>Here it is in callback style:</h4>
+<pre>
+  <code class="language-js">
+function addString(previous, current, callback){
+  setTimeout(
+    () => {
+      callback((previous + ' ' + current))
+    }, 
+    Math.floor(Math.random() * 100) + 1
+  )
+}
+  </code>
+</pre>
+<p>in order to call it:</p>
+<pre>
+  <code class="language-js">
+function addAll(){
+  addString('', 'A', result => {
+    addString(result, 'B', result => {
+      addString(result, 'C', result => {
+       console.log(result) // Prints out " A B C"
+      })
+    })
+  })
+}
+addAll()
+  </code>
+</pre>
+<p style="color: red">Not so nice. </p>
+
+<h4>Here it is in Promise style:</h4>
+<pre>
+  <code class="language-js">
+function addString(previous, current){
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      () => {
+        resolve(previous + ' ' + current)
+      }, 
+      Math.floor(Math.random() * 100) + 1
+    )
+  })
+}
+  </code>
+</pre>
+<p>And in order to call it:</p>
+<pre>
+  <code class="language-js">
+function addAll(){  
+  addString('', 'A')
+  .then(result => {
+    return addString(result, 'B')
+  })
+  .then(result => {
+    return addString(result, 'C')
+  })
+  .then(result => {
+    console.log(result) // Prints out " A B C"
+  })
+}
+addAll()
+
+  </code>
+</pre>
+<p>Using arrow functions means we can make the code a little nicer:</p>
+<pre>
+  <code class="language-js">
+function addAll(){  
+  addString('', 'A')
+  .then(result => addString(result, 'B'))
+  .then(result => addString(result, 'C'))
+  .then(result => {
+    console.log(result) // Prints out " A B C"
+  })
+}
+addAll()
+ </code>
+</pre>
+<p>This is definitely more readable, especially if you add more to the chain, <b style="color: #f00">but still a mess of parenthesis.</b></p>
+
+<h4>Here it is in Async|await style:</h4>
+<p>The function stays the same as the Promise version.<br>
+And in order to call it:
+</p>
+<pre>
+  <code class="language-js">
+async function addAll(){
+  let toPrint = ''
+  toPrint = await addString(toPrint, 'A')
+  toPrint = await addString(toPrint, 'B')
+  toPrint = await addString(toPrint, 'C')
+  console.log(toPrint) // Prints out " A B C"
+}
+addAll()
+
+  </code>
+</pre>
+<p>And in order to call it:</p>
+<pre>
+  <code class="language-js">
+function addAll(){  
+  addString('', 'A')
+  .then(result => {
+    return addString(result, 'B')
+  })
+  .then(result => {
+    return addString(result, 'C')
+  })
+  .then(result => {
+    console.log(result) // Prints out " A B C"
+  })
+}
+addAll()
+
+  </code>
+</pre>
+<p>Yeah. SO MUCH BETTER.</p>
+
+             <div class="note">
+              <p>Callback are the only way by which JavaScript achieves asynchronocity, there is no other way as JS is single threaded language. Promises and Async|await are syntactical sugar on top of it to make our code readable. Back of the hood all are dealing in callbacks.</p>
+             </div>
+
+
           </div>
           <div class="series-block">
             <h6><strong>Series:</strong> JS Upgrades</h6>
@@ -121,18 +341,18 @@ var html = Prism.highlight(code, Prism.languages.haml, 'haml');
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
+        
         var disqus_config = function () {
         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
-        */
-        // (function() { // DON'T EDIT BELOW THIS LINE
-        // var d = document, s = d.createElement('script');
-        // s.src = 'https://indrjit.disqus.com/embed.js';
-        // s.setAttribute('data-timestamp', +new Date());
-        // (d.head || d.body).appendChild(s);
-        // })();
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://indrjit.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
@@ -154,9 +374,9 @@ var html = Prism.highlight(code, Prism.languages.haml, 'haml');
     </script>
 
     <script src="../script/main.js"></script>
-    <script src="prism.js"></script>
+    <script src="../prism.js"></script>
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
-   <!--  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baf5e219b1c14ce"></script> -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baf5e219b1c14ce"></script>
 
   </body>
 </html>
